@@ -26,8 +26,8 @@
                     <p class="m-0">Showing 1-5 of 80 results</p>
                 </div>
                 <div class="click-menu d-flex align-items-center justify-content-between">
-                    <div class="change-list f-active me-2"><a href="{{ route('tours.show') }}"><i class="fa fa-bars rounded"></i></a></div>
-                    <div class="change-grid me-2"><a href="{{ route('tours.show') }}"><i class="fa fa-th rounded"></i></a></div>
+                    <div class="change-list f-active me-2"><a href="#"><i class="fa fa-bars rounded"></i></a></div>
+                    <div class="change-grid me-2"><a href="#"><i class="fa fa-th rounded"></i></a></div>
                     <div class="sortby d-flex align-items-center justify-content-between ml-2">
                         <select class="niceSelect">
                             <option value="1">Sort By</option>
@@ -43,14 +43,14 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-3">
                             <div class="trend-item2 rounded">
-                                <a href="tour-single.html" style="background-image: url(images/destination/destination17.jpg);"></a>
+                                <a href="#" style="background-image: url(images/destination/destination17.jpg);"></a>
                                 <div class="color-overlay"></div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6">
                             <div class="trend-content position-relative text-md-start text-center">
                                 <small>6+ Hours | Full Day Tours</small>
-                                <h3 class="mb-1"><a href="{{ route('tours.show') }}">Leeds Castle, Cliffs Of Dover</a></h3>
+                                <h3 class="mb-1"><a href="#">Leeds Castle, Cliffs Of Dover</a></h3>
                                 <h6 class="theme mb-0"><i class="icon-location-pin"></i> Croatia</h6>
                                 <p class="mt-4 mb-0">Taking Safety Measures <br><a href="#"><span class="theme"> Free cancellation</span></a></p>
                             </div>
@@ -70,7 +70,7 @@
                                     <h3 class="mb-0">$125</h3>
                                     <small>Per Adult</small>
                                 </div>
-                                <a href="{{ route('tours.show') }}" class="nir-btn">View Detail</a>
+                                <a href="#" class="nir-btn">View Detail</a>
                             </div>
                         </div>
                     </div>
@@ -79,14 +79,14 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-3">
                             <div class="trend-item2 rounded">
-                                <a href="{{ route('tours.show') }}" style="background-image: url(images/destination/destination15.jpg);"></a>
+                                <a href="#" style="background-image: url(images/destination/destination15.jpg);"></a>
                                 <div class="color-overlay"></div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6">
                             <div class="trend-content position-relative text-md-start text-center">
                                 <small>6+ Hours | Full Day Tours</small>
-                                <h3 class="mb-1"><a href="{{ route('tours.show') }}">Adriatic Adventure–Zagreb To Athens</a></h3>
+                                <h3 class="mb-1"><a href="#">Adriatic Adventure–Zagreb To Athens</a></h3>
                                 <h6 class="theme mb-0"><i class="icon-location-pin"></i> Greece</h6>
                                 <p class="mt-4 mb-0">Taking Safety Measures <br><a href="#"><span class="theme"> Free cancellation</span></a></p>
                             </div>
@@ -106,7 +106,7 @@
                                     <h3 class="mb-0">$160</h3>
                                     <small>Per Adult</small>
                                 </div>
-                                <a href="{{ route('tours.show') }}" class="nir-btn">View Detail</a>
+                                <a href="#" class="nir-btn">View Detail</a>
                             </div>
                         </div>
                     </div>
@@ -115,14 +115,14 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-3">
                             <div class="trend-item2 rounded">
-                                <a href="{{ route('tours.show') }}" style="background-image: url(images/destination/destination11.jpg);"></a>
+                                <a href="#" style="background-image: url(images/destination/destination11.jpg);"></a>
                                 <div class="color-overlay"></div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6">
                             <div class="trend-content position-relative text-md-start text-center">
                                 <small>6+ Hours | Full Day Tours</small>
-                                <h3 class="mb-1"><a href="{{ route('tours.show') }}">The Spanish Riviera Cost Bay</a></h3>
+                                <h3 class="mb-1"><a href="#">The Spanish Riviera Cost Bay</a></h3>
                                 <h6 class="theme mb-0"><i class="icon-location-pin"></i> Spain</h6>
                                 <p class="mt-4 mb-0">Taking Safety Measures <br><a href="#"><span class="theme"> Free cancellation</span></a></p>
                             </div>
@@ -142,7 +142,7 @@
                                     <h3 class="mb-0">$160</h3>
                                     <small>Per Adult</small>
                                 </div>
-                                <a href="{{ route('tours.show') }}" class="nir-btn">View Detail</a>
+                                <a href="#" class="nir-btn">View Detail</a>
                             </div>
                         </div>
                     </div>
@@ -151,14 +151,14 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-3">
                             <div class="trend-item2 rounded">
-                                <a href="{{ route('tours.show') }}" style="background-image: url(images/destination/destination12.jpg);"></a>
+                                <a href="#" style="background-image: url(images/destination/destination12.jpg);"></a>
                                 <div class="color-overlay"></div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6">
                             <div class="trend-content position-relative text-md-start text-center">
                                 <small>6+ Hours | Full Day Tours</small>
-                                <h3 class="mb-1"><a href="{{ route('tours.show') }}">Adriatic Adventure–Zagreb To Athens</a></h3>
+                                <h3 class="mb-1"><a href="#">Adriatic Adventure–Zagreb To Athens</a></h3>
                                 <h6 class="theme mb-0"><i class="icon-location-pin"></i> Greece</h6>
                                 <p class="mt-4 mb-0">Taking Safety Measures <br><a href="#"><span class="theme"> Free cancellation</span></a></p>
                             </div>
@@ -178,7 +178,7 @@
                                     <h3 class="mb-0">$160</h3>
                                     <small>Per Adult</small>
                                 </div>
-                                <a href="{{ route('tours.show') }}" class="nir-btn">View Detail</a>
+                                <a href="#" class="nir-btn">View Detail</a>
                             </div>
                         </div>
                     </div>
@@ -187,14 +187,14 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-3">
                             <div class="trend-item2 rounded">
-                                <a href="{{ route('tours.show') }}" style="background-image: url(images/destination/destination13.jpg);"></a>
+                                <a href="#" style="background-image: url(images/destination/destination13.jpg);"></a>
                                 <div class="color-overlay"></div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6">
                             <div class="trend-content position-relative text-md-start text-center">
                                 <small>6+ Hours | Full Day Tours</small>
-                                <h3 class="mb-1"><a href="{{ route('tours.show') }}">Highlights scenery of Vietnam</a></h3>
+                                <h3 class="mb-1"><a href="#">Highlights scenery of Vietnam</a></h3>
                                 <h6 class="theme mb-0"><i class="icon-location-pin"></i> Vietnam</h6>
                                 <p class="mt-4 mb-0">Taking Safety Measures <br><a href="#"><span class="theme"> Free cancellation</span></a></p>
                             </div>
@@ -214,7 +214,7 @@
                                     <h3 class="mb-0">$160</h3>
                                     <small>Per Adult</small>
                                 </div>
-                                <a href="{{ route('tours.show') }}" class="nir-btn">View Detail</a>
+                                <a href="#" class="nir-btn">View Detail</a>
                             </div>
                         </div>
                     </div>
@@ -223,14 +223,14 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-3">
                             <div class="trend-item2 rounded">
-                                <a href="{{ route('tours.show') }}" style="background-image: url(images/destination/destination10.jpg);"></a>
+                                <a href="#" style="background-image: url(images/destination/destination10.jpg);"></a>
                                 <div class="color-overlay"></div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6">
                             <div class="trend-content position-relative text-md-start text-center">
                                 <small>6+ Hours | Full Day Tours</small>
-                                <h3 class="mb-1"><a href="{{ route('tours.show') }}">The Spanish Riviera Cost Bay</a></h3>
+                                <h3 class="mb-1"><a href="#">The Spanish Riviera Cost Bay</a></h3>
                                 <h6 class="theme mb-0"><i class="icon-location-pin"></i> Spain</h6>
                                 <p class="mt-4 mb-0">Taking Safety Measures <br><a href="#"><span class="theme"> Free cancellation</span></a></p>
                             </div>
@@ -250,7 +250,7 @@
                                     <h3 class="mb-0">$160</h3>
                                     <small>Per Adult</small>
                                 </div>
-                                <a href="{{ route('tours.show') }}" class="nir-btn">View Detail</a>
+                                <a href="#" class="nir-btn">View Detail</a>
                             </div>
                         </div>
                     </div>
@@ -259,14 +259,14 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-3">
                             <div class="trend-item2 rounded">
-                                <a href="{{ route('tours.show') }}" style="background-image: url(images/destination/destination14.jpg);"></a>
+                                <a href="#" style="background-image: url(images/destination/destination14.jpg);"></a>
                                 <div class="color-overlay"></div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6">
                             <div class="trend-content position-relative text-md-start text-center">
                                 <small>6+ Hours | Full Day Tours</small>
-                                <h3 class="mb-1"><a href="{{ route('tours.show') }}">Empire Prestige Causeway Bay</a></h3>
+                                <h3 class="mb-1"><a href="#">Empire Prestige Causeway Bay</a></h3>
                                 <h6 class="theme mb-0"><i class="icon-location-pin"></i> Egypt</h6>
                                 <p class="mt-4 mb-0">Taking Safety Measures <br><a href="#"><span class="theme"> Free cancellation</span></a></p>
                             </div>
@@ -286,7 +286,7 @@
                                     <h3 class="mb-0">$160</h3>
                                     <small>Per Adult</small>
                                 </div>
-                                <a href="{{ route('tours.show') }}" class="nir-btn">View Detail</a>
+                                <a href="#" class="nir-btn">View Detail</a>
                             </div>
                         </div>
                     </div>
