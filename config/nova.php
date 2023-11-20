@@ -5,7 +5,7 @@ use Laravel\Nova\Http\Middleware\Authenticate;
 use Laravel\Nova\Http\Middleware\Authorize;
 use Laravel\Nova\Http\Middleware\BootTools;
 use Laravel\Nova\Http\Middleware\DispatchServingNovaEvent;
-use Laravel\Nova\Http\Middleware\HandleInertiaRequests;
+use App\Http\Middleware\HandleInertiaNovaRequest as HandleInertiaRequests;
 
 return [
 
@@ -162,15 +162,15 @@ return [
     |
     */
 
-    // 'brand' => [
-    //     'logo' => resource_path('/img/example-logo.svg'),
+     'brand' => [
+//         'logo' => resource_path('/img/example-logo.svg'),
 
-    //     'colors' => [
-    //         "400" => "24, 182, 155, 0.5",
-    //         "500" => "24, 182, 155",
-    //         "600" => "24, 182, 155, 0.75",
-    //     ]
-    // ],
+         'colors' => [
+             "400" => "2, 158, 157, 0.5",
+             "500" => "2, 158, 157",
+             "600" => "2, 158, 157, 0.75",
+         ]
+     ],
 
     /*
     |--------------------------------------------------------------------------
