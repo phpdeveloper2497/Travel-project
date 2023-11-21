@@ -3,11 +3,14 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Outl1ne\NovaTranslatable\HandlesTranslatable;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
+use Trin4ik\NovaSwitcher\NovaSwitcher;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 class Post extends Resource
 {
     use HandlesTranslatable;
@@ -47,6 +50,13 @@ class Post extends Resource
             ID::make()->sortable(),
             Text::make("Title")->translatable(),
             Trix::make('Desc')->translatable(),
+            NovaSwitcher::make('Status')->trueLabel('Вкл')
+                ->falseLabel('Выкл'),
+            DateTime::make('Published at'),
+            Images::make('Main image', 'post') // second parameter is the media collection name
+            ->conversionOnIndexView('thumb')// conversion used to display the image,
+            ->enableExistingMedia()
+                ->showStatistics()
         ];
     }
 
