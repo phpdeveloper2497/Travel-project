@@ -8,7 +8,6 @@ class Post extends Model
 {
     use HasTranslations;
 
-
     public $translatable = [
         'title',
         'desc'
