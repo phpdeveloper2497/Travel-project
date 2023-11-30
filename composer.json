@@ -18,6 +18,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "oneduo/nova-file-manager": "^0.12.0",
+        "outl1ne/nova-sortable": "^3.4",
         "outl1ne/nova-translatable": "^2.2",
         "spatie/laravel-medialibrary": "^10.0.0",
         "trin4ik/nova-switcher": "^0.4.0"
