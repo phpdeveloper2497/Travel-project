@@ -70,7 +70,7 @@
                                     <h3 class="mb-0">$125</h3>
                                     <small>Per Adult</small>
                                 </div>
-                                <a href="#" class="nir-btn">View Detail</a>
+                                <a href=" {{ route('tours.show', []) }}" class="nir-btn">View Detail</a>
                             </div>
                         </div>
                     </div>

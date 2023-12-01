@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Gallery;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -23,7 +24,11 @@ class PageController extends Controller
 
     public function gallery()
     {
-        return view('gallery');
+        $galleries = Gallery::all();
+//        $mediaItems = $galleries->getMedia("*");
+//        ->getFirstMedia('gallaries');
+//        dd($galleries);
+        return view('gallery', ['galleries' => $galleries);
     }
 
 }

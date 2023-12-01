@@ -16,17 +16,19 @@ class Gallery extends Model implements Sortable, HasMedia
     use InteractsWithMedia;
     use HasTranslations;
 
-    public $sortable = [
-        'order_column_name' => 'sort_order',
-        'sort_when_creating' => true,
-    ];
 
+    protected $fillable = ['title'];
     public $translatable = [
         'title',
     ];
 
-    protected $casts = [
-        'title' => 'array',
+//    protected $casts = [
+//        'title' => 'array',
+//    ];
+
+    public $sortable = [
+        'order_column_name' => 'sort_order',
+        'sort_when_creating' => true,
     ];
 
     public function registerMediaCollections(): void

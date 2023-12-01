@@ -23,21 +23,24 @@
                 <h4 class="mb-1 theme1">Our Gallery</h4>
             </div>
             <div class="row blog-main">
+                @foreach($galleries as $gallery)
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mansonry-item">
                     <div class="gallery-item mb-4 rounded overflow-hidden">
                         <div class="gallery-image">
-                            <img src="images/trending/trending3.jpg" alt="image">
+                            <img src={{ asset("images/trending/trending3.jpg") }} alt="image">
                             <div class="overlay"></div>
                         </div>
                         <div class="gallery-content">
-                            <h5 class="white text-center position-absolute bottom-0 pb-4 left-50 mb-0 w-100">Barcelona - Spain</h5>
+                            <h5 class="white text-center position-absolute bottom-0 pb-4 left-50 mb-0 w-100">
+                                {{$gallery->title }}
+                            </h5>
                             <ul>
-                                <li><a href="images/trending/trending3.jpg" data-lightbox="gallery" data-title="Title"><i class="fa fa-eye"></i></a></li>
-                                <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                <li><a href={{ asset("images/trending/trending3.jpg") }} data-lightbox="gallery" data-title="Title"><i class="fa fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                @endforeach
             </div>
         </div>
     </div>

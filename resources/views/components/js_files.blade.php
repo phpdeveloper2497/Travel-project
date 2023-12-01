@@ -1,13 +1,13 @@
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/particles.js"></script>
-<script src="js/particlerun.js"></script>
-<script src="js/plugin.js"></script>
-<script src="js/main.js"></script>
-<script src="js/custom-swiper.js"></script>
-<script src="js/custom-nav.js"></script>
-<script src="js/js-function.js"></script>
+<script data-cfasync="false" src={{ asset("cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js") }}></script>
+<script src={{asset("js/jquery-3.5.1.min.js")}}></script>
+<script src={{asset("js/bootstrap.min.js")}}></script>
+<script src={{asset("js/particles.js")}}></script>
+<script src={{asset("js/particlerun.js")}}></script>
+<script src={{asset("js/plugin.js")}}></script>
+<script src={{asset("js/main.js")}}></script>
+<script src={{asset("js/custom-swiper.js")}}></script>
+<script src={{asset("js/custom-nav.js")}}></script>
+<script src={{asset("js/js-function.js")}}></script>
 <script >
     (function () {
         var js = "window['__CF$cv$params']={r:'826769e9ec30b8ae',t:'MTcwMDA1MDQ2NC4zMTUwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../cdn-cgi/challenge-platform/h/g/scripts/jsd/9914b343/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";

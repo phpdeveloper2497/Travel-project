@@ -41,7 +41,7 @@
                     <div class="col-lg-12">
                         <div class="list-results d-flex align-items-center justify-content-between">
                             <div class="list-results-sort">
-                                <p class="m-0">Showing 1-5 of 80 results</p>
+                                <p class="m-0">Showing 1-2 results</p>
                             </div>
                             <div class="click-menu d-flex align-items-center justify-content-between">
                                 <div class="change-list me-2 rounded overflow-hidden"><a href="post-list-1.html"><i class="fa fa-bars bg-gr ey"></i></a></div>
@@ -57,32 +57,34 @@
                             </div>
                         </div>
                     </div>
+                    @foreach( $posts as $post)
                     <div class="col-lg-4 col-md-6">
                         <div class="trend-item box-shadow bg-white mb-4 rounded overflow-hidden">
                             <div class="trend-image">
-                                <img src="images/trending/trending10.jpg" alt="image">
+                                <img src="{{ asset('/storage/.$post->foto') }}" alt="image">
                             </div>
                             <div class="trend-content-main p-4 pb-2">
                                 <div class="trend-content">
-                                    <h5 class="theme mb-1">Technology</h5>
-                                    <h4><a href="detail-1.html">How a developer duo at Deutsche Bank keep remote alive.</a></h4>
+                                    <h5 class="theme mb-1">Category</h5>
+                                    <h4><a href="detail-1.html"> {{ $post->title }}</a></h4>
                                     <p class="mb-3">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                       {!! $post->desc !!}
                                     </p>
+                                    <small> {{ $post->published_at }}</small>
                                     <div class="entry-meta d-flex align-items-center justify-content-between">
                                         <div class="entry-author mb-2">
                                             <img src="images/reviewer/2.jpg" alt class="rounded-circle me-1">
                                             <span>Sollmond Nell</span>
                                         </div>
                                         <div class="entry-button d-flex align-items-center mb-2">
-                                            <a href="#" class="nir-btn">Read More</a>
+                                            <a href="{{route('posts.show',['post', $post])}}" class="nir-btn">Read More</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    @endforeach
                 </div>
             </div>
         </div>

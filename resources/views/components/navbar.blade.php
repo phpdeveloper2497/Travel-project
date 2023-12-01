@@ -5,7 +5,7 @@
 
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" alt="image">
+                        <img src={{asset("images/logo.png")}} alt="image">
                     </a>
                 </div>
 
