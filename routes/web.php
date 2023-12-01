@@ -6,6 +6,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TourController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LanguageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,5 +31,8 @@ Route::get('/tours',[TourController::class, 'index'])->name('tours.index');
 Route::get('/tours/{tour}',[TourController::class, 'show'])->name('tours.show');
 
 Route::get('/login',[AuthController::class, 'login'])->name('login');
+
+Route::get('language/{locale}',[LanguageController::class, 'change_locale'])->name('locale.change');
+
 
 

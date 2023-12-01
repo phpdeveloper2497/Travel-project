@@ -1,23 +1,35 @@
 {
+    "Home": "Bosh sahifa",
+    "Tours": "Ekskursiyalar",
+    "Blog": "Blog",
+    "Gallery": "Galereya",
+    "About us": "Biz haqimizda",
+    "Contact": "Bog'lanish",
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    "Travelin": "Travelin",
+    "All rights reserved": "Barcha huquqlar himoyalangan",
+    "We Support": "Qo'llab-quvvatlaymiz",
+    "Subscribe": "Obuna boʻling",
+    "Newsletter": "Axborot byulleteni",
+    "Categories": "Kategoriyalar",
+    "Quick Link": "Tez havola",
+    "Website": "Veb-sayt",
+    "Email": "Elektron pochta",
+    "Location": "Manzil",
+    "PO Box": "Pochta qutisi",
+    "Delivery Information": "Yetkazib berish haqida ma'lumot",
+    "Privacy Policy": "Maxfiylik siyosati",
+    "Terms & Conditions": "Foydalanish shartlari",
+    "Customer Service": "Mijozlarga xizmat ko'rsatish",
+    "Return Policy": "Qaytarish siyosati",
+    "Travel": "Sayohat",
+    "Technology": "Texnologiya",
+    "Lifestyle": "Hayot tarzi",
+    "Destinations": "Manzillar",
+    "Entertainment": "O'yin-kulgi",
+    "Business": "Biznes",
+    "Our Partners": "Bizning hamkorlarimiz",
+    "Our Awesome Partners": "Bizning ajoyib hamkorlarimiz",
 
     "(and :count more error)": "(and :count more error)",
     "(and :count more errors)": "(and :count more errors)",

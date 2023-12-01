@@ -1,22 +1,35 @@
 {
+    "Home": "Дом",
+    "Tours": "Туры",
+    "Blog": "Блог",
+    "Gallery": "Галерея",
+    "About us": "О нас",
+    "Contact": "Контакт",
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    "Travelin": "Travelin",
+    "All rights reserved": "Все права защищены",
+    "We Support": "Мы поддерживаем",
+    "Subscribe": "Подписаться",
+    "Newsletter": "Новостная рассылка",
+    "Categories": "Категории",
+    "Quick Link": "Прямая ссылка",
+    "Website": "Веб-сайт",
+    "Email": "Электронная почта",
+    "Location": "Адрес",
+    "PO Box": "Почтовый ящик",
+    "Delivery Information": "информация о доставке",
+    "Privacy Policy": "политика конфиденциальности",
+    "Terms & Conditions": "Условия использования",
+    "Customer Service": "Обслуживание клиентов",
+    "Return Policy": "Политика возврата",
+    "Travel": "Путешествовать",
+    "Technology": "Технологии",
+    "Lifestyle": "Стиль жизни",
+    "Destinations": "Направления",
+    "Entertainment": "Развлечение",
+    "Business": "Бизнес",
+    "Our Partners": "Наши партнеры",
+    "Our Awesome Partners": "Наши замечательные партнеры",
 
     "(and :count more error)": "(и ещё :count ошибка)",
     "(and :count more errors)": "(и ещё :count ошибок)",

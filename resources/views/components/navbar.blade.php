@@ -11,55 +11,44 @@
 
                 <div class="navbar-collapse1 d-flex align-items-center" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav" id="responsive-menu">
-                        <li><a href="{{ route('home') }}">Home</a></li>
-                        <li><a href="{{ route('tours.index') }}">Tours</a></li>
-                        <li><a href="{{ route('posts.index') }}">Blog</a></li>
-                        <li><a href="{{ route('gallery') }}">Gallery</a></li>
-                        <li><a href="{{ route('about') }}">About Us</a></li>
-                        <li><a href="{{ route('contact') }}">Contact</a></li>
+                        <li><a href="{{ route('home') }}">{{ __('Home') }}</a></li>
+                        <li><a href="{{ route('tours.index') }}">{{__('Tours')}}</a></li>
+                        <li><a href="{{ route('posts.index') }}">{{__('Blog')}}</a></li>
+                        <li><a href="{{ route('gallery') }}">{{__('Gallery')}}</a></li>
+                        <li><a href="{{ route('about') }}">{{__('About us')}}</a></li>
+                        <li><a href="{{ route('contact') }}">{{__('Contact')}}</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-collapse1 d-flex align-items-center" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" id="responsive-menu">
+                        <li class="dropdown submenu active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false"
+                            >{{ $current_locale }}
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    @foreach($all_locales as $locale)
+                                        <a class="btn btn-primary mr-2"
+                                           href="{{ route('locale.change',['locale' => $locale]) }}">
+                                            {{ $locale }}
+                                        </a>
+                                    @endforeach
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
 
-{{--                    <div class="dropdown">--}}
-{{--                        <a class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">--}}
-{{--                            <i class="flag flag-uzbekistan flag m-0"></i>--}}
-{{--                        </a>--}}
-{{--                        <ul class="dropdown-menu" aria-labelledby="Dropdown">--}}
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item" href="#"><i class="flag flag-uzbekistan"></i>uz<i class="fa fa-check text-success ms-2"></i></a>--}}
-{{--                            </li>--}}
-{{--                            <li><hr class="dropdown-divider" /></li>--}}
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>en</a>--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item" href="#"><i class="flag flag-russia"></i>ru</a>--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-a
-{{--                    <div class="dropdown">--}}
-{{--                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">--}}
-
-{{--                        </button>--}}
-{{--                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">--}}
-{{--                            <li><a class="dropdown-item" href="#">uz</a></li>--}}
-{{--                            <li><a class="dropdown-item" href="#">en</a></li>--}}
-{{--                            <li><a class="dropdown-item" href="#">ru</a></li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-
-
-
-
-
+                    <div class="register-login d-flex align-items-center">
+                        <a href="{{ route('login') }}" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                           class="me-3">
+                            <i class="icon-user"></i> Login/Register
+                        </a>
+                        <a href="#" class="nir-btn white">Book Now</a>
+                    </div>
+                    <div id="slicknav-mobile"></div>
                 </div>
-                <div class="register-login d-flex align-items-center">
-                    <a href="{{ route('login') }}" data-bs-toggle="modal" data-bs-target="#exampleModal" class="me-3">
-                        <i class="icon-user"></i> Login/Register
-                    </a>
-                    <a href="#" class="nir-btn white">Book Now</a>
-                </div>
-                <div id="slicknav-mobile"></div>
             </div>
         </div>
     </nav>

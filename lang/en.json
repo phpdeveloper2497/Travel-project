@@ -1,18 +1,35 @@
 {
+    "Home": "Home",
+    "Tours": "Tours",
+    "Blog": "Blog",
+    "Gallery": "Gallery",
+    "About us": "About us",
+    "Contact": "Contact",
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    "Travelin": "Travelin",
+    "All rights reserved": "All rights reserved",
+    "We Support": "We Support",
+    "Newsletter": "Newsletter",
+    "Categories": "Categories",
+    "Quick Link": "Quick Link",
+    "Website": "Website",
+    "Email": "Email",
+    "Location": "Location",
+    "PO Box": "PO Box",
+    "Delivery Information": "Delivery Information",
+    "Privacy Policy": "Privacy Policy",
+    "Terms & Conditions": "Terms & Conditions",
+    "Customer Service": "Customer Service",
+    "Return Policy": "Return Policy",
+    "Travel": "Travel",
+    "Technology": "Technology",
+    "Lifestyle": "Lifestyle",
+    "Destinations": "Destinations",
+    "Entertainment": "Entertainment",
+    "Business": "Business",
+    "Our Partners": "Our Partners",
+    "Our Awesome Partners": "Our Awesome Partners",
+    "Location": "Location",
 
     "(and :count more error)": "(and :count more error)",
     "(and :count more errors)": "(and :count more errors)",
