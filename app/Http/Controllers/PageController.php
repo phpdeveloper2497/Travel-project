@@ -22,13 +22,15 @@ class PageController extends Controller
         return view('contact');
     }
 
+
     public function gallery()
     {
         $galleries = Gallery::all();
-//        $mediaItems = $galleries->getMedia("*");
-//        ->getFirstMedia('gallaries');
+//        $galleries = Gallery::last();
 //        dd($galleries);
-        return view('gallery', ['galleries' => $galleries);
+//        $mediaItems = Gallery::last()->getFirstMedia('gallery')->getUrl();
+//        dd($mediaItems);
+        return view('gallery', ['galleries' => $galleries]);
     }
 
 }

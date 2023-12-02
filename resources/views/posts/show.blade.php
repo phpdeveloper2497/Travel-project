@@ -27,11 +27,15 @@
                 <div class="col-lg-9 mb-4">
                     <div class="blog-single">
                         <div class="blog-wrapper">
-                            <h2 class="lh-sm"> {{ $post->title }}</h2>
+                            <h2 class="lh-sm">
+                                {{ $post->title }}
+                            </h2>
                             <div class="blog-content first-child-cap">
-                                <p class="mb-3"> {{ $post->desc }} </p>
+                                <p class="mb-3">
+                                  {!! $post->desc !!}
+                                </p>
                                     <br><br>
-                                    <img src={{asset("images/bg/bg3.jpg")}} alt="image" class="mb-3 rounded">
+                                        <img src="{{ $post->getFirstMedia('post')->getUrl() }}" alt="image" class="mb-3 rounded">
                             </div>
                         </div>
                     </div>

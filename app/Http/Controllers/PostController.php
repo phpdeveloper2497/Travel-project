@@ -8,9 +8,11 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
 
-    public function index()
+        public function index()
     {
         $posts = Post::all();
+//        dd($posts->getFirstMedia('post')->getUrl());
+
         return view('posts.index',['posts' =>$posts]);
     }
 
@@ -27,8 +29,11 @@ class PostController extends Controller
     }
 
 
-    public function show(Post $post)
+    public function show() //Post $post
     {
+        $post = Post::find(1);
+//        dd($post->getFirstMedia('post')->getUrl());
+//        dd($post);
         return view('posts.show')->with(['post' => $post]);
     }
 

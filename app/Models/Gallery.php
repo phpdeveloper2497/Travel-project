@@ -17,7 +17,7 @@ class Gallery extends Model implements Sortable, HasMedia
     use HasTranslations;
 
 
-    protected $fillable = ['title'];
+//    protected $fillable = ['title'];
     public $translatable = [
         'title',
     ];
@@ -44,6 +44,11 @@ class Gallery extends Model implements Sortable, HasMedia
             ->width(300)
             ->height(300);
     }
+
+//    public  static function last()
+//    {
+//    return static::all()->last();
+//    }
 }
 
 

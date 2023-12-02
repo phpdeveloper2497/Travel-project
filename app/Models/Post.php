@@ -22,7 +22,6 @@ class Post extends Model  implements HasMedia
         'published_at' => 'datetime',
     ];
 
-
     public function registerMediaCollections(): void
     {
         $this->addMediaCollection('post')->singleFile();
@@ -36,5 +35,7 @@ class Post extends Model  implements HasMedia
             ->width(130)
             ->height(130);
     }
+
+
 
 }

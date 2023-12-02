@@ -1,38 +1,38 @@
 <x-layouts.main>
 
-    <div class="page-cover pt-10 pb-6 bg-grey">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4">
-                    <div class="cover-content text-center text-md-start">
-                        <div class="author-detail mb-2">
-                            <a href="#" class="tag white bg-theme py-1 px-3 me-2 rounded">#Technology</a>
-                            <a href="#" class="tag py-1 px-3"><i class="fa fa-eye"></i> 2500</a>
-                        </div>
-                        <h1>Ratcliffe to be Director of nation talent Trump ignored</h1>
-                        <div class="author-detail d-flex align-items-center">
-                            <span class="me-3"><a href="#"><i class="fa fa-clock"></i> Posted On : 12 May 2021</a></span>
-                            <span class="me-3"><a href="#"><i class="fa fa-user"></i> Jack Richard</a></span>
-                            <span><a href="#"><i class="fa fa-comments"></i> 50</a></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <div class="position-relative rounded bg-white">
-                        <img src="images/blog/blog10.jpg" alt="Image" class="w-100 rounded">
-                        <div class="video-button text-center position-absolute w-100 mx-auto z-index3 top-50 start-50 translate-middle">
-                            <div class="call-button text-center">
-                                <button type="button" class="play-btn js-video-button" data-video-id="152879427" data-channel="vimeo">
-                                    <i class="fa fa-play bg-blue"></i>
-                                </button>
-                            </div>
-                            <div class="video-figure"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--    <div class="page-cover pt-10 pb-6 bg-grey">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row align-items-center">--}}
+{{--                <div class="col-lg-6 mb-4">--}}
+{{--                    <div class="cover-content text-center text-md-start">--}}
+{{--                        <div class="author-detail mb-2">--}}
+{{--                            <a href="#" class="tag white bg-theme py-1 px-3 me-2 rounded">#Technology</a>--}}
+{{--                            <a href="#" class="tag py-1 px-3"><i class="fa fa-eye"></i> 2500</a>--}}
+{{--                        </div>--}}
+{{--                        <h1>Ratcliffe to be Director of nation talent Trump ignored</h1>--}}
+{{--                        <div class="author-detail d-flex align-items-center">--}}
+{{--                            <span class="me-3"><a href="#"><i class="fa fa-clock"></i> Posted On : 12 May 2021</a></span>--}}
+{{--                            <span class="me-3"><a href="#"><i class="fa fa-user"></i> Jack Richard</a></span>--}}
+{{--                            <span><a href="#"><i class="fa fa-comments"></i> 50</a></span>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-6 mb-4">--}}
+{{--                    <div class="position-relative rounded bg-white">--}}
+{{--                        <img src="images/blog/blog10.jpg" alt="Image" class="w-100 rounded">--}}
+{{--                        <div class="video-button text-center position-absolute w-100 mx-auto z-index3 top-50 start-50 translate-middle">--}}
+{{--                            <div class="call-button text-center">--}}
+{{--                                <button type="button" class="play-btn js-video-button" data-video-id="152879427" data-channel="vimeo">--}}
+{{--                                    <i class="fa fa-play bg-blue"></i>--}}
+{{--                                </button>--}}
+{{--                            </div>--}}
+{{--                            <div class="video-figure"></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <section class="blog">
         <div class="container">
@@ -61,16 +61,20 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="trend-item box-shadow bg-white mb-4 rounded overflow-hidden">
                             <div class="trend-image">
-                                <img src="{{ asset('/storage/.$post->foto') }}" alt="image">
+                                <img src={{ $post->getFirstMedia('post')->getUrl() }} alt="image">
                             </div>
                             <div class="trend-content-main p-4 pb-2">
                                 <div class="trend-content">
                                     <h5 class="theme mb-1">Category</h5>
-                                    <h4><a href="detail-1.html"> {{ $post->title }}</a></h4>
+                                    <h4><a href="detail-1.html">
+                                           {{ $post->title }}
+                                        </a></h4>
                                     <p class="mb-3">
                                        {!! $post->desc !!}
                                     </p>
-                                    <small> {{ $post->published_at }}</small>
+                                    <small>
+                                        {{ $post->published_at }}
+                                    </small>
                                     <div class="entry-meta d-flex align-items-center justify-content-between">
                                         <div class="entry-author mb-2">
                                             <img src="images/reviewer/2.jpg" alt class="rounded-circle me-1">
@@ -78,6 +82,7 @@
                                         </div>
                                         <div class="entry-button d-flex align-items-center mb-2">
                                             <a href="{{route('posts.show',['post', $post])}}" class="nir-btn">Read More</a>
+
                                         </div>
                                     </div>
                                 </div>

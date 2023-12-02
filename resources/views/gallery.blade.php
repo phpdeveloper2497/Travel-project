@@ -27,15 +27,16 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mansonry-item">
                     <div class="gallery-item mb-4 rounded overflow-hidden">
                         <div class="gallery-image">
-                            <img src={{ asset("images/trending/trending3.jpg") }} alt="image">
+{{--                            @dd($gallery);--}}
+                            <img src={{$gallery->getFirstMedia('gallery')->getUrl()}} alt="image">
                             <div class="overlay"></div>
                         </div>
                         <div class="gallery-content">
                             <h5 class="white text-center position-absolute bottom-0 pb-4 left-50 mb-0 w-100">
                                 {{$gallery->title }}
-                            </h5>
+                            </h5>'
                             <ul>
-                                <li><a href={{ asset("images/trending/trending3.jpg") }} data-lightbox="gallery" data-title="Title"><i class="fa fa-eye"></i></a></li>
+                                <li><a href={{$gallery->getFirstMedia('gallery')->getUrl()}} data-lightbox="gallery" data-title={{$gallery->title }}><i class="fa fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
