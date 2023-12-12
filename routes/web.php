@@ -25,7 +25,7 @@ Route::get('/about',[PageController::class, 'about'])->name('about');
 Route::get('/contact',[PageController::class, 'contact'])->name('contact');
 
 Route::get('/posts',[PostController::class, 'index'])->name('posts.index');
-Route::get('/posts/{posts}',[PostController::class, 'show'])->name('posts.show');
+Route::get('/posts/{post}',[PostController::class, 'show'])->name('posts.show');
 
 Route::get('/tours',[TourController::class, 'index'])->name('tours.index');
 Route::get('/tours/{tour}',[TourController::class, 'show'])->name('tours.show');

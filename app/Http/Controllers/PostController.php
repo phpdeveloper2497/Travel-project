@@ -29,11 +29,8 @@ class PostController extends Controller
     }
 
 
-    public function show() //Post $post
+    public function show(Post $post)
     {
-        $post = Post::find(1);
-//        dd($post->getFirstMedia('post')->getUrl());
-//        dd($post);
         return view('posts.show')->with(['post' => $post]);
     }
 
