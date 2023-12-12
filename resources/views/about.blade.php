@@ -1,12 +1,12 @@
 <x-layouts.main>
 
     <x-page-header>
-        About Us
+        {{__('About us')}}
     </x-page-header>
 
 
     <section class="about-us pt-6"
-             style="background-image:url(images/background_pattern.png); background-position:bottom right;">
+             style="background-image:url({{asset('images/background_pattern.png')}}); background-position:bottom right;">
         <div class="container">
             <div class="about-image-box">
                 <div class="row d-flex align-items-center justify-content-between">
@@ -15,11 +15,7 @@
                             <h4 class="theme d-inline-block mb-0">Get To Know Us</h4>
                             <h2 class="border-b mb-2 pb-1">Explore All Tour of the world with us.</h2>
                             <p class="border-b mb-2 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum.</p>
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                             <div class="about-listing">
                                 <ul class="d-flex justify-content-between">
                                     <li><i class="icon-location-pin theme"></i> Tour Guide</li>
@@ -31,7 +27,7 @@
                     </div>
                     <div class="col-lg-6 mb-4 pe-4">
                         <div class="about-image" style="animation:none; background:transparent;">
-                            <img src="images/travel.png" alt>
+                            <img src="{{asset('images/travel.png')}}" alt>{__{('')}}
                         </div>
                     </div>
                     <div class="col-lg-12">
@@ -87,7 +83,6 @@
         <div class="section-shape section-shape1" style="background-image: url(images/shape8.png);"></div>
         <div class="container">
             <div class="section-title mb-6 w-50 mx-auto text-center">
-                <h4 class="mb-1 theme1">Core Features</h4>
                 <h2 class="mb-1">Find <span class="theme">Travel Perfection</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore.</p>
@@ -156,146 +151,76 @@
     </section>
 
 
-    <section class="our-team pb-0 pt-6">
-        <div class="container">
-            <div class="section-title mb-6 w-75 mx-auto text-center">
-                <h4 class="mb-1 theme1">Tour Guides</h4>
-                <h2 class="mb-1">Meet Our <span class="theme">Excellent Guides</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore.</p>
-            </div>
-            <div class="team-main">
-                <div class="row shop-slider">
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                        <div class="team-list rounded">
-                            <div class="team-image">
-                                <img src="images/team/img1.jpg" alt="team">
-                            </div>
-                            <div class="team-content text-center p-3 bg-theme">
-                                <h4 class="mb-0 white">Salmon Thuir</h4>
-                                <p class="mb-0 white">Senior Agent</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                        <div class="team-list rounded">
-                            <div class="team-image">
-                                <img src="images/team/img2.jpg" alt="team">
-                            </div>
-                            <div class="team-content text-center p-3 bg-theme">
-                                <h4 class="mb-0 white">Horke Pels</h4>
-                                <p class="mb-0 white">Head Officer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                        <div class="team-list rounded">
-                            <div class="team-image">
-                                <img src="images/team/img4.jpg" alt="team">
-                            </div>
-                            <div class="team-content text-center p-3 bg-theme">
-                                <h4 class="mb-0 white">Solden kalos</h4>
-                                <p class="mb-0 white">Supervisor</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                        <div class="team-list rounded">
-                            <div class="team-image">
-                                <img src="images/team/img3.jpg" alt="team">
-                            </div>
-                            <div class="team-content text-center p-3 bg-theme">
-                                <h4 class="mb-0 white">Nelson Bam</h4>
-                                <p class="mb-0 white">Quality Assurance</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                        <div class="team-list rounded">
-                            <div class="team-image">
-                                <img src="images/team/img4.jpg" alt="team">
-                            </div>
-                            <div class="team-content text-center bg-theme p-3">
-                                <h4 class="mb-0 white">Cacics Coold</h4>
-                                <p class="mb-0 white">Asst. Manager</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="testimonial pt-9" style="background-image:url(images/testimonial.png)">
-        <div class="container">
-            <div class="section-title mb-6 text-center w-75 mx-auto">
-                <h4 class="mb-1 theme1">Our Testimonails</h4>
-                <h2 class="mb-1">Good Reviews By <span class="theme">Clients</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore.</p>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pe-4">
-                    <div class="testimonial-image">
-                        <img src="images/travel2.png" alt>
-                    </div>
-                </div>
-                <div class="col-lg-7 ps-4">
-                    <div class="row review-slider">
-                        <div class="col-sm-4 item">
-                            <div class="testimonial-item1 rounded">
-                                <div class="author-info mt-2 d-flex align-items-center mb-4">
-                                    <a href="#"><img src="images/testimonial/img1.jpg" alt></a>
-                                    <div class="author-title ms-3">
-                                        <h5 class="m-0 theme">Jared Erondu</h5>
-                                        <span>Supervisor</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <p class="m-0"><i class="fa fa-quote-left me-2 fs-1"></i>Lorem Ipsum is simply dummy
-                                        text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum
-                                        has been the industry's standard dummy hic et quidem. Dignissimos maxime velit
-                                        unde inventore quasi vero dolorem.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 item">
-                            <div class="testimonial-item1 rounded">
-                                <div class="author-info mt-2 d-flex align-items-center mb-4">
-                                    <a href="#"><img src="images/testimonial/img1.jpg" alt></a>
-                                    <div class="author-title ms-3">
-                                        <h5 class="m-0 theme">Jared Erondu</h5>
-                                        <span>Supervisor</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <p class="m-0"><i class="fa fa-quote-left me-2 fs-1"></i>Lorem Ipsum is simply dummy
-                                        text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum
-                                        has been the industry's standard dummy hic et quidem. Dignissimos maxime velit
-                                        unde inventore quasi vero dolorem.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+{{--    <section class="testimonial pt-9" style="background-image:url(images/testimonial.png)">--}}
+{{--        <div class="container">--}}
+{{--            <div class="section-title mb-6 text-center w-75 mx-auto">--}}
+{{--                <h4 class="mb-1 theme1">Our Testimonails</h4>--}}
+{{--                <h2 class="mb-1">Good Reviews By <span class="theme">Clients</span></h2>--}}
+{{--                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut--}}
+{{--                    labore.</p>--}}
+{{--            </div>--}}
+{{--            <div class="row align-items-center">--}}
+{{--                <div class="col-lg-5 pe-4">--}}
+{{--                    <div class="testimonial-image">--}}
+{{--                        <img src="images/travel2.png" alt>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-7 ps-4">--}}
+{{--                    <div class="row review-slider">--}}
+{{--                        <div class="col-sm-4 item">--}}
+{{--                            <div class="testimonial-item1 rounded">--}}
+{{--                                <div class="author-info mt-2 d-flex align-items-center mb-4">--}}
+{{--                                    <a href="#"><img src="images/testimonial/img1.jpg" alt></a>--}}
+{{--                                    <div class="author-title ms-3">--}}
+{{--                                        <h5 class="m-0 theme">Jared Erondu</h5>--}}
+{{--                                        <span>Supervisor</span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="details">--}}
+{{--                                    <p class="m-0"><i class="fa fa-quote-left me-2 fs-1"></i>Lorem Ipsum is simply dummy--}}
+{{--                                        text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum--}}
+{{--                                        has been the industry's standard dummy hic et quidem. Dignissimos maxime velit--}}
+{{--                                        unde inventore quasi vero dolorem.</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-sm-4 item">--}}
+{{--                            <div class="testimonial-item1 rounded">--}}
+{{--                                <div class="author-info mt-2 d-flex align-items-center mb-4">--}}
+{{--                                    <a href="#"><img src="images/testimonial/img1.jpg" alt></a>--}}
+{{--                                    <div class="author-title ms-3">--}}
+{{--                                        <h5 class="m-0 theme">Jared Erondu</h5>--}}
+{{--                                        <span>Supervisor</span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="details">--}}
+{{--                                    <p class="m-0"><i class="fa fa-quote-left me-2 fs-1"></i>Lorem Ipsum is simply dummy--}}
+{{--                                        text of the printing andypesetting industry. Lorem ipsum a simple Lorem Ipsum--}}
+{{--                                        has been the industry's standard dummy hic et quidem. Dignissimos maxime velit--}}
+{{--                                        unde inventore quasi vero dolorem.</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
 
     <div class="our-partner pt-0 pb-6">
         <div class="container">
+            <h4 class="mb-1 theme1">{{__('Our Partners')}}</h4>
             <div class="partners_inner">
                 <ul>
-                    <li><img src="images/cl-5.png" alt></li>
-                    <li><img src="images/cl-2.png" alt></li>
-                    <li><img src="images/cl-3.png" alt></li>
-                    <li><img src="images/cl-4.png" alt></li>
-                    <li><img src="images/cl-5.png" alt></li>
-                    <li><img src="images/cl-3.png" alt></li>
-                    <li><img src="images/cl-2.png" alt></li>
-                    <li><img src="images/cl-1.png" alt></li>
+                    <li><img src="{{__('images/cl-5.png')}}" alt></li>
+                    <li><img src="{{__('images/cl-2.png')}}" alt></li>
+                    <li><img src="{{__('images/cl-3.png')}}" alt></li>
+                    <li><img src="{{__('images/cl-4.png')}}" alt></li>
+                    <li><img src="{{__('images/cl-5.png')}}" alt></li>
+                    <li><img src="{{__('images/cl-3.png')}}" alt></li>
+                    <li><img src="{{__('images/cl-2.png')}}" alt></li>
+                    <li><img src="{{__('images/cl-1.png')}}" alt></li>
                 </ul>
             </div>
         </div>

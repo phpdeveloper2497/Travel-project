@@ -1,24 +1,5 @@
-@php
-    \Carbon\Carbon::setLocale(Session::get('locale'));
-    $locale = Session::get('locale');
-    $t_locale = 'ru_Ru';
-    if ($locale && $locale === 'en'){
-        $t_locale = 'en_En';
-    }
-
-     if ($locale && $locale === 'ru'){
-        $t_locale = 'ru_Ru';
-    }
-
-     if ($locale && $locale === 'uz'){
-        $t_locale = 'uz_Cyrl';
-    }
-
-
-    setlocale(LC_TIME, $t_locale);
-@endphp
-        <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+<!DOCTYPE html>
+{{--<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">--}}
 
 <head>
     <meta charset="UTF-8">

@@ -11,7 +11,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-//        dd($posts->getFirstMedia('post')->getUrl());
+
 
         return view('posts.index', ['posts' => $posts]);
     }

@@ -7,7 +7,7 @@
                 <h1 class="mb-3">{{ $slot }}</h1>
                 <nav aria-label="breadcrumb" class="d-block">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('home') }}">{{__('Home')}}</a></li>
                         <li class="breadcrumb-item active" aria-current="page">{{ $slot }}</li>
                     </ul>
                 </nav>

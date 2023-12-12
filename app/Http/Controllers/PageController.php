@@ -33,4 +33,11 @@ class PageController extends Controller
         return view('gallery', ['galleries' => $galleries]);
     }
 
+//    public function footerimage()
+//    {
+//        $galleries = Gallery::all();
+//
+//        return view('components.footer', ['galleries' => $galleries]);
+//    }
+
 }

@@ -1,6 +1,6 @@
 <x-layouts.main>
     <x-page-header>
-        Login
+        {{__('Login')}}
     </x-page-header>
 
 
