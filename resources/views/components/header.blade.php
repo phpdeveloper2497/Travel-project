@@ -1,4 +1,23 @@
-<!DOCTYPE html>
+@php
+    \Carbon\Carbon::setLocale(Session::get('locale'));
+    $locale = Session::get('locale');
+    $t_locale = 'ru_Ru';
+    if ($locale && $locale === 'en'){
+        $t_locale = 'en_En';
+    }
+
+     if ($locale && $locale === 'ru'){
+        $t_locale = 'ru_Ru';
+    }
+
+     if ($locale && $locale === 'uz'){
+        $t_locale = 'uz_Cyrl';
+    }
+
+
+    setlocale(LC_TIME, $t_locale);
+@endphp
+        <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
 
 <head>
@@ -23,9 +42,11 @@
         <div class="container d-flex align-items-center justify-content-between">
             <div class="links">
                 <ul>
-                    <li><a href="#" class="white"><i class="icon-calendar white"></i> Thursday, Mar 26, 2021</a>
+                    <li><a href="#" class="white"><i
+                                    class="icon-calendar white"></i>{{ now()->formatLocalized('%a, %b %d, %Y %H:%M') }}
+                        </a>
                     </li>
-                    <li><a href="#" class="white"><i class="icon-location-pin white"></i> Hollywood, America</a>
+                    <li><a href="#" class="white"><i class="icon-location-pin white"></i> {{ config('app.timezone') }}</a>
                     </li>
                     <li><a href="#" class="white"><i class="icon-clock white"></i> Mon-Fri: 10 AM – 5 PM</a></li>
                 </ul>

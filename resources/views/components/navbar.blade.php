@@ -4,8 +4,9 @@
             <div class="navbar-flex d-flex align-items-center justify-content-between w-100 pb-3 pt-3">
 
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
-                        <img src={{asset("images/logo.png")}} alt="image">
+                    <a class="navbar-brand d-flex" href="{{ route('home') }}">
+                        <img src={{ asset("images/logo.svg") }} alt="YO-TOUR-LOGO" class="mr-1">
+                        <h1 class="align-items-baseline m-0">TOUR</h1>
                     </a>
                 </div>
 
@@ -30,7 +31,7 @@
                             <ul class="dropdown-menu">
                                 <li>
                                     @foreach($all_locales as $locale)
-                                        <a class="btn btn-primary mr-2"
+                                        <a class="btn btn-primary  text-uppercase"
                                            href="{{ route('locale.change',['locale' => $locale]) }}">
                                             {{ $locale }}
                                         </a>
@@ -41,11 +42,11 @@
                     </ul>
 
                     <div class="register-login d-flex align-items-center">
-                        <a href="{{ route('login') }}" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                           class="me-3">
-                            <i class="icon-user"></i> Login/Register
-                        </a>
-                        <a href="#" class="nir-btn white">Book Now</a>
+{{--                        <a href="{{ route('login') }}" data-bs-toggle="modal" data-bs-target="#exampleModal"--}}
+{{--                           class="me-3">--}}
+{{--                            <i class="icon-user"></i> Login/Register--}}
+{{--                        </a>--}}
+{{--                        <a href="#" class="nir-btn white">Book Now</a>--}}
                     </div>
                     <div id="slicknav-mobile"></div>
                 </div>
