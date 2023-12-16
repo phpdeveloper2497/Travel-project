@@ -48,12 +48,12 @@ class Post extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make("Title")->translatable(),
-            Trix::make('Desc')->translatable(),
-            NovaSwitcher::make('Status')->trueLabel('Вкл')
+            Text::make(__("Title"), 'title')->translatable(),
+            Trix::make(__("Content"), 'desc')->translatable(),
+            NovaSwitcher::make(__("Status"), 'status')->trueLabel('Вкл')
                 ->falseLabel('Выкл'),
-            DateTime::make('Published at'),
-            Images::make('Main image', 'post') // second parameter is the media collection name
+            DateTime::make(__('Published at'), 'published_at'),
+            Images::make('Основное изображение', 'post') // second parameter is the media collection name
             ->conversionOnIndexView('thumb')// conversion used to display the image,
             ->enableExistingMedia()
                 ->showStatistics()
@@ -102,5 +102,15 @@ class Post extends Resource
     public function actions(NovaRequest $request)
     {
         return [];
+    }
+
+    public static function label()
+    {
+        return __('Posts');
+    }
+
+    public static function singularLabel()
+    {
+        return __('Post');
     }
 }

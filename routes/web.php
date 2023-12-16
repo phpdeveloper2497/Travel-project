@@ -33,6 +33,9 @@ Route::get('/tours/tour',[TourController::class, 'show'])->name('tours.show');
 Route::get('/login',[AuthController::class, 'login'])->name('login');
 
 Route::get('language/{locale}',[LanguageController::class, 'change_locale'])->name('locale.change');
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
 
 
 

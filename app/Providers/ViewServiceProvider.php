@@ -24,10 +24,10 @@ class ViewServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::composer('components.footer', function ($view) {
-            $view->with('galleries', Gallery::all());
+            $view->with('galleries', Gallery::with('media')->get());
         });
         View::composer('home', function ($view) {
-            $view->with('posts', Post::latest()->limit(3)->get());
+            $view->with('posts', Post::with('media')->latest()->limit(3)->get());
         });
     }
 }

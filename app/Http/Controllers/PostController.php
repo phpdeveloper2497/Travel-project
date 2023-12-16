@@ -10,8 +10,7 @@ class PostController extends Controller
 
     public function index()
     {
-        $posts = Post::all();
-
+        $posts = Post::query()->with('media')->where('status', true)->get();
 
         return view('posts.index', ['posts' => $posts]);
     }

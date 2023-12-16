@@ -871,7 +871,8 @@
                             <div class="row m-0">
                                 <div class="col-lg-5 col-md-4 ps-0">
                                     <div class="trend-item2">
-                                        <a href="#" style="background-image: url({{asset('images/trending/trending1.jpg')}});"></a>
+                                        <a href="#"
+                                           style="background-image: url({{asset('images/trending/trending1.jpg')}});"></a>
                                         <div class="ribbon ribbon-top-left"><span class="fw-bold">20% OFF</span></div>
                                         <div class="color-overlay"></div>
                                     </div>
@@ -913,7 +914,8 @@
                             <div class="row m-0">
                                 <div class="col-lg-5 col-md-4 ps-0">
                                     <div class="trend-item2">
-                                        <a href="#" style="background-image: url({{asset('images/trending/trending2.jpg')}});"></a>
+                                        <a href="#"
+                                           style="background-image: url({{asset('images/trending/trending2.jpg')}});"></a>
                                         <div class="ribbon ribbon-top-left"><span class="fw-bold">10% OFF</span></div>
                                         <div class="color-overlay"></div>
                                     </div>
@@ -955,7 +957,8 @@
                             <div class="row m-0">
                                 <div class="col-lg-5 col-md-4 ps-0">
                                     <div class="trend-item2">
-                                        <a href="#" style="background-image: url({{asset('images/trending/trending3.jpg')}});"></a>
+                                        <a href="#"
+                                           style="background-image: url({{asset('images/trending/trending3.jpg')}});"></a>
                                         <div class="ribbon ribbon-top-left"><span class="fw-bold">30% OFF</span></div>
                                         <div class="color-overlay"></div>
                                     </div>
@@ -997,7 +1000,8 @@
                             <div class="row m-0">
                                 <div class="col-lg-5 col-md-4 ps-0">
                                     <div class="trend-item2">
-                                        <a href="#" style="background-image: url({{asset('images/trending/trending4.jpg')}});"></a>
+                                        <a href="#"
+                                           style="background-image: url({{asset('images/trending/trending4.jpg')}});"></a>
                                         <div class="ribbon ribbon-top-left"><span class="fw-bold">15% OFF</span></div>
                                         <div class="color-overlay"></div>
                                     </div>
@@ -1082,7 +1086,7 @@
                                         <p class="mb-3">
                                             {!! $post->desc !!}
 
-{{--                                            {!!  strlen($post->desc) > 50 ? substr($post->desc,0,50)."..." : $post->desc!!}--}}
+                                            {{--                                            {!!  strlen($post->desc) > 50 ? substr($post->desc,0,50)."..." : $post->desc!!}--}}
                                         </p>
                                         <div class="entry-meta d-flex align-items-center justify-content-between">
                                             <div class="entry-button d-flex align-items-center mb-2">
@@ -1100,47 +1104,25 @@
             </div>
         </div>
     </section>
-
-    <section class="our-partner pt-0 pb-6">
-        <div class="container">
-            <div class="section-title mb-6 w-75 mx-auto text-center">
-                <h4 class="mb-1 theme1">{{__('Our Partners')}}</h4>
-                <h2 class="mb-1">{{__('Our Awesome')}} <span class="theme">{{__('partners')}}</span></h2>
-            </div>
-            <div class="row align-items-center partner-in partner-slider">
-                <div class="col-md-3 col-sm-6">
-                    <div class="partner-item p-4 py-2 rounded bg-lgrey">
-                        <img src="{{__('images/cl-1.png')}}" alt>
-                    </div>
+    @if($partners && $partners->count() > 0)
+        <section class="our-partner pt-0 pb-6">
+            <div class="container">
+                <div class="section-title mb-6 w-75 mx-auto text-center">
+                    <h4 class="mb-1 theme1">{{__('Our Partners')}}</h4>
+                    <h2 class="mb-1">{{__('Our Awesome')}} <span class="theme">{{__('partners')}}</span></h2>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="partner-item p-4 py-2 rounded bg-lgrey">
-                        <img src="{{asset('images/cl-5.png')}}" alt>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="partner-item p-4 py-2 rounded bg-lgrey">
-                        <img src="{{asset('images/cl-2.png')}}" alt>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="partner-item p-4 py-2 rounded bg-lgrey">
-                        <img src="{{asset('images/cl-3.png')}}" alt>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="partner-item p-4 py-2 rounded bg-lgrey">
-                        <img src="{{asset('images/cl-4.png')}}" alt>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="partner-item p-4 py-2 rounded bg-lgrey">
-                        <img src="{{asset('images/cl-5.png')}}" alt>
-                    </div>
+                <div class="row align-items-center partner-in partner-slider">
+                    @foreach($partners as $partner)
+                        <div class="col-md-3 col-sm-6">
+                            <div class="partner-item p-4 py-2 rounded bg-lgrey">
+                                <img src="{{asset($partner->getFirstMediaUrl('partner'))}}" alt="{{ $partner->title }}">
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
 
 
 </x-layouts.main>

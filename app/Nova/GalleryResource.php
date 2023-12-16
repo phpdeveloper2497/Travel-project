@@ -25,10 +25,10 @@ class GalleryResource extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('Title')
+            Text::make(__('Title'), 'title')
                 ->sortable()
                 ->rules('nullable'),
-            Images::make('Image', 'gallery') // second parameter is the media collection name
+            Images::make(__('Image'), 'gallery') // second parameter is the media collection name
             ->conversionOnIndexView('thumb')// conversion used to display the image,
             ->enableExistingMedia()
                 ->showStatistics()
@@ -53,5 +53,15 @@ class GalleryResource extends Resource
     public function actions(Request $request): array
     {
         return [];
+    }
+
+    public static function label()
+    {
+        return __('Gallery');
+    }
+
+    public static function singularLabel()
+    {
+        return __('Image');
     }
 }

@@ -26,7 +26,6 @@
                                                 <a href="{{route('posts.show',['post' => $post])}}" class="nir-btn">
                                                     {{__("Read More")}}
                                                 </a>
-
                                             </div>
                                         </div>
                                     </div>

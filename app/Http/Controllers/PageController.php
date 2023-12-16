@@ -3,13 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Gallery;
+use App\Models\Partner;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function home()
     {
-        return view('home');
+        $partners = Partner::query()->where('status', '=', true)->orderBy('sort_order')->get();
+        return view('home', [
+            'partners' => $partners->load('media')
+        ]);
     }
 
     public function about()
@@ -25,12 +29,12 @@ class PageController extends Controller
 
     public function gallery()
     {
-        $galleries = Gallery::all();
-//        $galleries = Gallery::last();
-//        dd($galleries);
-//        $mediaItems = Gallery::last()->getFirstMedia('gallery')->getUrl();
-//        dd($mediaItems);
-        return view('gallery', ['galleries' => $galleries]);
+        $galleries = Gallery::query()->with('media')->get();
+        return view('gallery',
+            [
+                'galleries' => $galleries
+            ]
+        );
     }
 
 //    public function footerimage()

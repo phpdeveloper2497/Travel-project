@@ -17,14 +17,10 @@ class Gallery extends Model implements Sortable, HasMedia
     use HasTranslations;
 
 
-//    protected $fillable = ['title'];
     public $translatable = [
         'title',
     ];
 
-//    protected $casts = [
-//        'title' => 'array',
-//    ];
 
     public $sortable = [
         'order_column_name' => 'sort_order',
@@ -44,11 +40,6 @@ class Gallery extends Model implements Sortable, HasMedia
             ->width(300)
             ->height(300);
     }
-
-//    public  static function last()
-//    {
-//    return static::all()->last();
-//    }
 }
 
 

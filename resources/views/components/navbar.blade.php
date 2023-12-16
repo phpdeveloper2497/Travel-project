@@ -12,12 +12,12 @@
 
                 <div class="navbar-collapse1 d-flex align-items-center" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav" id="responsive-menu">
-                        <li><a href="{{ route('home') }}">{{ __('Home') }}</a></li>
-                        <li><a href="{{ route('tours.index') }}">{{__('Tours')}}</a></li>
-                        <li><a href="{{ route('posts.index') }}">{{__('Blog')}}</a></li>
-                        <li><a href="{{ route('gallery') }}">{{__('Gallery')}}</a></li>
-                        <li><a href="{{ route('about') }}">{{__('About us')}}</a></li>
-                        <li><a href="{{ route('contact') }}">{{__('Contact')}}</a></li>
+                        <li class="@if (Request::is('/')) active @endif"><a href="{{ route('home') }}">{{ __('Home') }}</a></li>
+                        <li class="@if (Request::is('tours')) active @endif"><a href="{{ route('tours.index') }}">{{__('Tours')}}</a></li>
+                        <li class="@if (Request::is('posts')) active @endif"><a href="{{ route('posts.index') }}">{{__('Blog')}}</a></li>
+                        <li class="@if (Request::is('gallery')) active @endif"><a href="{{ route('gallery') }}">{{__('Gallery')}}</a></li>
+                        <li class="@if (Request::is('about')) active @endif"><a href="{{ route('about') }}">{{__('About us')}}</a></li>
+                        <li class="@if (Request::is('contact')) active @endif"><a href="{{ route('contact') }}">{{__('Contact')}}</a></li>
                     </ul>
                 </div>
 

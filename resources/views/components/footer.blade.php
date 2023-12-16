@@ -13,7 +13,7 @@
                     @foreach($galleries as $gallery)
                         <div class="col-md-3 col-sm-6">
                             <div class="insta-image rounded">
-                                <a href="gallery.html"><img src="{{$gallery->getFirstMedia('gallery')->getUrl()}} "
+                                <a href="gallery.html"><img src="{{$gallery->getFirstMediaUrl('gallery')}} "
                                                             alt="insta"></a>
                             </div>
                         </div>
