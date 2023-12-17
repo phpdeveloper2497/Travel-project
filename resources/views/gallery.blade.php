@@ -14,7 +14,7 @@
                     <div class="gallery-item mb-4 rounded overflow-hidden">
                         <div class="gallery-image">
 {{--                            @dd($gallery);--}}
-                            <img src={{$gallery->getFirstMedia('gallery')->getUrl()}} alt="image">
+                            <img src={{$gallery->getFirstMediaUrl('gallery')}} alt="image">
                             <div class="overlay"></div>
                         </div>
                         <div class="gallery-content">
@@ -22,7 +22,7 @@
                                 {{$gallery->title}}
                             </h5>'
                             <ul>
-                                <li><a href={{$gallery->getFirstMedia('gallery')->getUrl()}} data-lightbox="gallery" data-title={{$gallery->title}}><i class="fa fa-eye"></i></a></li>
+                                <li><a href={{$gallery->getFirstMediaUrl('gallery')}} data-lightbox="gallery" data-title={{$gallery->title}}><i class="fa fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>

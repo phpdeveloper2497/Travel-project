@@ -1076,7 +1076,7 @@
                         <div class="col-lg-4 col-md-3">
                             <div class="trend-item box-shadow bg-white mb-4 rounded overflow-hidden">
                                 <div class="trend-image">
-                                    <img src={{ $post->getFirstMedia('post')->getUrl() }} alt="image">
+                                    <img src={{ $post->getFirstMediaUrl('post') }} alt="image">
                                 </div>
                                 <div class="trend-content-main p-4 pb-2">
                                     <div class="trend-content">
@@ -1084,7 +1084,7 @@
                                                 {{ $post->title }}
                                             </a></h4>
                                         <p class="mb-3">
-                                            {!! $post->desc !!}
+{{--                                            {!! $post->desc !!}--}}
 
                                             {{--                                            {!!  strlen($post->desc) > 50 ? substr($post->desc,0,50)."..." : $post->desc!!}--}}
                                         </p>

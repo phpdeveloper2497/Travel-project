@@ -273,8 +273,8 @@
         }
     });
     $('form').submit(function (event) {
-        event.preventDefault();
-        return false;
+        // event.preventDefault();
+        // return false;
     });
 })(jQuery);
 jQuery(window).on('resize load', () => {

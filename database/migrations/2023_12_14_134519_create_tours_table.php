@@ -10,7 +10,9 @@ return new class extends Migration {
         Schema::create('tours', function (Blueprint $table) {
             $table->id();
             $table->json('title')->nullable();
-            $table->json('description')->nullable();
+            $table->text('description_en')->nullable();
+            $table->text('description_ru')->nullable();
+            $table->text('description_uz')->nullable();
             $table->json('short_description')->nullable();
             $table->json('days')->nullable();
             $table->json('season')->nullable();
