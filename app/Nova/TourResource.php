@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use App\Models\Tour;
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Emilianotisato\NovaTinyMCE\NovaTinyMCE;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -81,6 +82,12 @@ class TourResource extends Resource
             Currency::make('Price')->currency('UZS')->locale('uz'),
             Number::make('Category Id')
                 ->rules('nullable', 'integer'),
+            Panel::make('Images', [
+                Images::make('Images', 'tour_gallery') // second parameter is the media collection name
+                ->conversionOnIndexView('thumb') // conversion used to display the image on the model's index page
+                ->fullSize()
+                ->enableExistingMedia()
+            ])
         ];
     }
 
