@@ -21,7 +21,7 @@
                                         </div>
                                         <div class="info-content">
                                             <h3>{{__('Office Location')}}</h3>
-                                            <p class="m-0">445 Mount Eden Road, Mt Eden Basundhara Chakrapath</p>
+                                            <p class="m-0">{{$settings->address}}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -32,8 +32,8 @@
                                         </div>
                                         <div class="info-content">
                                             <h3>{{__('Phone Number')}}</h3>
-                                            <p class="m-0">977-444-666-888</p>
-                                            <p class="m-0">977-444-222-000</p>
+                                            <p class="m-0">{{ $settings->phone1 }}</p>
+                                            <p class="m-0">{{ $settings->phone2 }}</p>
                                         </div>
                                     </div>
                                 </div>

@@ -7,6 +7,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\TourController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
+use UniSharp\LaravelFilemanager\Lfm;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,8 +36,10 @@ Route::get('/login',[AuthController::class, 'login'])->name('login');
 
 Route::get('language/{locale}',[LanguageController::class, 'change_locale'])->name('locale.change');
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
-    \UniSharp\LaravelFilemanager\Lfm::routes();
+    Lfm::routes();
 });
+
+//Route::get('settings',[SettingsController::class, 'index']);
 
 
 

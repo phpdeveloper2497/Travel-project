@@ -34,10 +34,10 @@
             </div>
             <div class="links float-right">
                 <ul>
-                    <li><a href="#" class="white"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class="white"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class="white"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class="white"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+                    <li><a href="{{ $settings->facebook }}" class="white"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ $settings->instagram }}" class="white"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ $settings->telegram }}" class="white"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ $settings->youtube }}" class="white"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>

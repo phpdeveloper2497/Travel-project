@@ -38,13 +38,12 @@
                         </p>
                         <ul>
                             <li class="white"><strong>{{__('PO Box')}}:</strong> +47-252-254-2542</li>
-                            <li class="white"><strong>{{__('Location')}}:</strong> Collins Street, sydney, Australia
+                            <li class="white"><strong>{{__('Location')}}:</strong> {{$settings->address}}
                             </li>
                             <li class="white"><strong>{{__('Email')}}:</strong> <a
                                     href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
                                     class="__cf_email__" data-cfemail="4d24232b220d193f2c3b28212423632e2220">[email&#160;protected]</a>
                             </li>
-                            <li class="white"><strong>{{__('Website')}}:</strong> www.Travelin.com</li>
                         </ul>
                     </div>
                 </div>
@@ -72,10 +71,10 @@
                 </div>
                 <div class="social-links">
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a href="{{ $settings->facebook }}"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="{{ $settings->instagram }}"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="{{ $settings->telegram }}"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
+                        <li><a href="{{ $settings->youtube }}"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -118,108 +117,7 @@
                         </li>
                     </ul>
 
-                    {{--                    <div class="tab-content blog-full" id="postsTabContent">--}}
 
-                    {{--                        <div aria-labelledby="login-tab" class="tab-pane fade active show" id="login"--}}
-                    {{--                             role="tabpanel">--}}
-                    {{--                            <div class="row">--}}
-                    {{--                                <div class="col-lg-6">--}}
-                    {{--                                    <div class="blog-image rounded">--}}
-                    {{--                                        <a href="#"--}}
-                    {{--                                           style="background-image: url(images/trending/trending5.jpg);"></a>--}}
-                    {{--                                    </div>--}}
-                    {{--                                </div>--}}
-                    {{--                                <div class="col-lg-6">--}}
-                    {{--                                    <h4 class="text-center border-b pb-2">Login</h4>--}}
-                    {{--                                    <div class="log-reg-button d-flex align-items-center justify-content-between">--}}
-                    {{--                                        <button type="submit" class="btn btn-fb">--}}
-                    {{--                                            <i class="fab fa-facebook"></i> Login with Facebook--}}
-                    {{--                                        </button>--}}
-                    {{--                                        <button type="submit" class="btn btn-google">--}}
-                    {{--                                            <i class="fab fa-google"></i> Login with Google--}}
-                    {{--                                        </button>--}}
-                    {{--                                    </div>--}}
-                    {{--                                    <hr class="log-reg-hr position-relative my-4 overflow-visible">--}}
-                    {{--                                    <form method="post" action="#" name="contactform" id="contactform">--}}
-                    {{--                                        <div class="form-group mb-2">--}}
-                    {{--                                            <input type="text" name="user_name" class="form-control" id="fname"--}}
-                    {{--                                                   placeholder="User Name or Email Address">--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="form-group mb-2">--}}
-                    {{--                                            <input type="password" name="password_name" class="form-control"--}}
-                    {{--                                                   id="lpass"--}}
-                    {{--                                                   placeholder="Password">--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="form-group mb-2">--}}
-                    {{--                                            <input type="checkbox" class="custom-control-input" id="exampleCheck">--}}
-                    {{--                                            <label class="custom-control-label mb-0" for="exampleCheck1">Remember--}}
-                    {{--                                                me</label>--}}
-                    {{--                                            <a class="float-end" href="#">Lost your password?</a>--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="comment-btn mb-2 pb-2 text-center border-b">--}}
-                    {{--                                            <input type="submit" class="nir-btn w-100" id="submit" value="Login">--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <p class="text-center">Don't have an account? <a href="#"--}}
-                    {{--                                                                                         class="theme">Register</a>--}}
-                    {{--                                        </p>--}}
-                    {{--                                    </form>--}}
-                    {{--                                </div>--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
-
-                    {{--                        <div aria-labelledby="register-tab" class="tab-pane fade" id="register" role="tabpanel">--}}
-                    {{--                            <div class="row">--}}
-                    {{--                                <div class="col-lg-6">--}}
-                    {{--                                    <div class="blog-image rounded">--}}
-                    {{--                                        <a href="#"--}}
-                    {{--                                           style="background-image: url("{{ asset("images/trending/trending5.jpg") }});"></a>--}}
-                    {{--                                    </div>--}}
-                    {{--                                </div>--}}
-                    {{--                                <div class="col-lg-6">--}}
-                    {{--                                    <h4 class="text-center border-b pb-2">Register</h4>--}}
-                    {{--                                    <div class="log-reg-button d-flex align-items-center justify-content-between">--}}
-                    {{--                                        <button type="submit" class="btn btn-fb">--}}
-                    {{--                                            <i class="fab fa-facebook"></i> Login with Facebook--}}
-                    {{--                                        </button>--}}
-                    {{--                                        <button type="submit" class="btn btn-google">--}}
-                    {{--                                            <i class="fab fa-google"></i> Login with Google--}}
-                    {{--                                        </button>--}}
-                    {{--                                    </div>--}}
-                    {{--                                    <hr class="log-reg-hr position-relative my-4 overflow-visible">--}}
-                    {{--                                    <form method="post" action="#" name="contactform1" id="contactform1">--}}
-                    {{--                                        <div class="form-group mb-2">--}}
-                    {{--                                            <input type="text" name="user_name" class="form-control" id="fname1"--}}
-                    {{--                                                   placeholder="User Name">--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="form-group mb-2">--}}
-                    {{--                                            <input type="text" name="user_name" class="form-control" id="femail"--}}
-                    {{--                                                   placeholder="Email Address">--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="form-group mb-2">--}}
-                    {{--                                            <input type="password" name="password_name" class="form-control"--}}
-                    {{--                                                   id="lpass1"--}}
-                    {{--                                                   placeholder="Password">--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="form-group mb-2">--}}
-                    {{--                                            <input type="password" name="password_name" class="form-control"--}}
-                    {{--                                                   id="lrepass" placeholder="Re-enter Password">--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="form-group mb-2 d-flex">--}}
-                    {{--                                            <input type="checkbox" class="custom-control-input" id="exampleCheck1">--}}
-                    {{--                                            <label class="custom-control-label mb-0 ms-1 lh-1" for="exampleCheck1">I--}}
-                    {{--                                                have read and accept the Terms and Privacy Policy?</label>--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="comment-btn mb-2 pb-2 text-center border-b">--}}
-                    {{--                                            <input type="submit" class="nir-btn w-100" id="submit1"--}}
-                    {{--                                                   value="Register">--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <p class="text-center">Already have an account? <a href="#"                                                                                          class="theme">Login</a>--}}
-                    {{--                                        </p>--}}
-                    {{--                                    </form>--}}
-                    {{--                                </div>--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
-                    {{--                    </div>--}}
                 </div>
             </div>
         </div>

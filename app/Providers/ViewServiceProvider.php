@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\Gallery;
 use App\Models\Post;
+use App\Models\Setting;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -28,6 +29,10 @@ class ViewServiceProvider extends ServiceProvider
         });
         View::composer('home', function ($view) {
             $view->with('posts', Post::with('media')->latest()->limit(3)->get());
+        });
+
+        View::composer('*', function ($view) {
+            $view->with('settings', Setting::first());
         });
     }
 }
