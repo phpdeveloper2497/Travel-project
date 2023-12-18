@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreBookRequest;
+use App\Models\Book;
+use App\Models\Tour;
 use Illuminate\Http\Request;
 
 class TourController extends Controller
@@ -9,38 +12,35 @@ class TourController extends Controller
 
     public function index()
     {
-       return view('tours.index');
+        $tours = Tour::query()->where('status', 1)->get();
+//        dd($tours);
+        return view('tours.index', ['tours' => $tours]);
     }
 
 
     public function create()
     {
-        //
-    }
-
-
-    public function store(Request $request)
-    {
-        //
-    }
-
-
-    public function show()
-    {
-        return view('tours.show');
 
     }
 
 
-    public function edit(string $id)
+    public function store(StoreBookRequest $request)
     {
-        //
+         Book::create([
+//            "tour_id" => $request->input('tourId'),
+            "first_name" => $request->first_name,
+            "last_name" => $request->last_name,
+            "phone" => $request->phone,
+            "description" => $request->description,
+        ]);
+        return redirect()->route('tours.index');
     }
 
 
-    public function update(Request $request, string $id)
+    public function show(Tour $tour)
     {
-        //
+        return view('tours.show', ['tour' => $tour]);
+
     }
 
 

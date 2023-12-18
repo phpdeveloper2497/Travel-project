@@ -28,7 +28,8 @@ Route::get('/posts',[PostController::class, 'index'])->name('posts.index');
 Route::get('/posts/{post}',[PostController::class, 'show'])->name('posts.show');
 
 Route::get('/tours',[TourController::class, 'index'])->name('tours.index');
-Route::get('/tours/tour',[TourController::class, 'show'])->name('tours.show');
+Route::post('/tours/tour',[TourController::class, 'store'])->name('tours.store');
+Route::get('/tours/{tour}',[TourController::class, 'show'])->name('tours.show');
 
 Route::get('/login',[AuthController::class, 'login'])->name('login');
 

@@ -5,7 +5,6 @@
     </x-page-header>
 
     <section class="trending pt-6 pb-0 bg-lgrey overflow-hidden">
-
         <div class="container">
             <div class="single-content">
                 <div id="highlight">
@@ -111,24 +110,44 @@
         </div>
     </section>
 
-    <section class="discount-action pt-0"
-             style="background-image:url({{ asset('images/section-bg1.png') }}); background-position:center;">
+{{--    BOOKING FORM--}}
+
+    <section class="contact-main pt-6 pb-60">
         <div class="container">
-            <div class="call-banner rounded pt-10 pb-14">
-                <div class="call-banner-inner w-75 mx-auto text-center px-5">
-                    <div class="trend-content-main">
-                        <div class="trend-content mb-5 pb-2 px-5">
-                            <h2>{{__('Explore Your Life,')}} <span
-                                    class="theme1"> {{__('Travel Where You Want!')}}</span></h2>
-                        </div>
+            <div class="contact-info-main mt-0">
+                <div class="row">
+                    <h1>{{__('Book now')}}</h1>
+                    <div class="col-lg-6">
+
+                        <form action="{{ route('tours.store') }}" method="post" >
+                            @csrf
+                            <div class="form-group mb-2">
+                                <input type="hidden" name="tourId" value="{{$tour->id}}" >
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="text" name="first_name" class="form-control"
+                                       placeholder="{{__('First Name')}}">
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="text" name="last_name" class="form-control"
+                                       placeholder="{{__('Last Name')}}">
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="text" name="phone" class="form-control"
+                                       placeholder="{{__('Phone')}}">
+                            </div>
+                            <div class="textarea mb-2">
+                                <textarea name="description" placeholder="{{__('Enter a message')}}"></textarea>
+                            </div>
+                            <div class="comment-btn text-center">
+                                <input class="nir-btn" type="submit" value="{{__('Send')}}">
+{{--                                <button class="nir-btn" type="submit">{{__('Send')}}</button>--}}
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="white-overlay"></div>
-        <div class="white-overlay"></div>
-        <div class="section-shape  top-inherit bottom-0"
-             style="background-image: url({{ asset('images/shape6.png') }});"></div>
     </section>
 
     <section class="our-partner pb-6 pt-6">

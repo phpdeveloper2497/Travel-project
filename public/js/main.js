@@ -273,7 +273,6 @@
         }
     });
     $('form').submit(function (event) {
-        console.log(event.target);
         // event.preventDefault();
         // return false;
     });
