@@ -21,7 +21,7 @@
                                         </div>
                                         <div class="info-content">
                                             <h3>{{__('Office Location')}}</h3>
-                                            <p class="m-0">{{$settings->addres}}</p>
+                                            <p class="m-0">{{ $settings->address}}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -69,29 +69,66 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
+                                        @if (Session::has('successMsg'))
+                                            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                                <div id="liveToast" class="toast fade show" role="alert"
+                                                     aria-live="assertive" aria-atomic="true">
+                                                    <div class="toast-header">
+                                                        <div class="rounded me-2 bg-primary" style="width: 16px; height: 16px"></div>
+                                                        <strong class="me-auto">{{__('Message')}}</strong>
+                                                    </div>
+                                                    <div class="toast-body">
+                                                        {{ Session::get('successMsg') }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endif
                                         <div id="contactform-error-msg"></div>
-                                        <form method="post" action="#" name="contactform2" id="contactform2">
+                                        <form method="post" action="{{ route('create.ticket') }}">
+                                            @csrf()
                                             <div class="form-group mb-2">
-                                                <input type="text" name="first_name" class="form-control" id="fullname"
-                                                       placeholder="{{__('First Name')}}">
+                                                <input type="text" name="first_name"
+                                                       class="form-control @error('first_name') is-invalid @enderror"
+                                                       placeholder="{{__('First Name')}}"
+                                                       value="{{ old('first_name') }}">
+                                                @error('first_name')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                             <div class="form-group mb-2">
-                                                <input type="text" name="last_name" class="form-control" id="llastname"
-                                                       placeholder="{{__('Last Name')}}">
+                                                <input type="text" name="last_name"
+                                                       class="form-control @error('last_name') is-invalid @enderror"
+                                                       placeholder="{{__('Last Name')}}" value="{{ old('last_name') }}">
+                                                @error('last_name')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                             <div class="form-group mb-2">
-                                                <input type="email" name="email" class="form-control" id="email"
-                                                       placeholder="{{__('Email')}}">
+                                                <input type="email" name="email"
+                                                       class="form-control @error('email') is-invalid @enderror"
+                                                       placeholder="{{__('Email')}}" value="{{ old('email') }}">
+                                                @error('email')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                             <div class="form-group mb-2">
-                                                <input type="text" name="phone" class="form-control" id="phnumber"
-                                                       placeholder="{{__('Phone')}}">
+                                                <input type="text" name="phone"
+                                                       class="form-control @error('phone') is-invalid @enderror"
+                                                       placeholder="{{__('Phone')}}" value="{{ old('phone') }}">
+                                                @error('phone')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                             <div class="textarea mb-2">
-                                                <textarea name="comments" placeholder="{{__('Enter a message')}}"></textarea>
+                                                <textarea class="@error('message') is-invalid @enderror" name="message"
+                                                          placeholder="{{__('Enter a message')}}">{{ old('message') }}</textarea>
+                                                @error('message')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                                @enderror
                                             </div>
                                             <div class="comment-btn text-center">
-                                                <input type="submit" class="nir-btn" id="submit2" value="{{__('Send Message')}}">
+                                                <input type="submit" class="nir-btn" id="submit2"
+                                                       value="{{__('Send Message')}}">
                                             </div>
                                         </form>
                                     </div>

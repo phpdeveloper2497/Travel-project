@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateTicketRequest;
 use App\Models\Gallery;
 use App\Models\Partner;
+use App\Models\Ticket;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -18,7 +20,10 @@ class PageController extends Controller
 
     public function about()
     {
-        return view('about');
+        $partners = Partner::query()->where('status', '=', true)->orderBy('sort_order')->get();
+        return view('about', [
+            'partners' => $partners->load('media')
+        ]);
     }
 
     public function contact()
@@ -35,6 +40,14 @@ class PageController extends Controller
                 'galleries' => $galleries
             ]
         );
+    }
+
+
+    public function createTicket(CreateTicketRequest $request)
+    {
+        Ticket::create($request->validated());
+        $request->session()->flash('successMsg', __('Your ticket accepted'));
+        return back();
     }
 
 //    public function footerimage()

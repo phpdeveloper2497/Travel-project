@@ -22,23 +22,23 @@ class TicketResource extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('First Name')
+            Text::make(__('First Name'), 'first_name')
                 ->sortable()
                 ->rules('required'),
 
-            Text::make('Last Name')
+            Text::make(__('Last Name'), 'last_name')
                 ->sortable()
                 ->rules('required'),
 
-            Text::make('Email')
+            Text::make(__('Email'), 'email')
                 ->sortable()
                 ->rules('nullable', 'email', 'max:254'),
 
-            Text::make('Phone')
+            Text::make(__('Phone'), 'phone')
                 ->sortable()
                 ->rules('nullable'),
 
-            Text::make('Message')
+            Text::make(__('Message'), 'message')
                 ->sortable()
                 ->rules('required'),
         ];
@@ -62,5 +62,31 @@ class TicketResource extends Resource
     public function actions(Request $request): array
     {
         return [];
+    }
+
+
+    public static function singularLabel()
+    {
+        return __('Ticket');
+    }
+
+    public static function label()
+    {
+        return __('Tickets');
+    }
+
+    public static function authorizedToCreate(Request $request)
+    {
+        return false;
+    }
+
+    public function authorizedToUpdate(Request $request)
+    {
+        return false;
+    }
+
+    public function authorizedToReplicate(Request $request)
+    {
+        return false;
     }
 }

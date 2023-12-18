@@ -20,21 +20,22 @@ use UniSharp\LaravelFilemanager\Lfm;
 |
 */
 
-Route::get('/',[PageController::class, 'home'])->name('home');
-Route::get('/gallery',[PageController::class, 'gallery'])->name('gallery');
-Route::get('/about',[PageController::class, 'about'])->name('about');
-Route::get('/contact',[PageController::class, 'contact'])->name('contact');
+Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/gallery', [PageController::class, 'gallery'])->name('gallery');
+Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
-Route::get('/posts',[PostController::class, 'index'])->name('posts.index');
-Route::get('/posts/{post}',[PostController::class, 'show'])->name('posts.show');
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
-Route::get('/tours',[TourController::class, 'index'])->name('tours.index');
-Route::post('/tours/tour',[TourController::class, 'store'])->name('tours.store');
-Route::get('/tours/{tour}',[TourController::class, 'show'])->name('tours.show');
+Route::get('/tours', [TourController::class, 'index'])->name('tours.index');
+Route::post('/tours/tour', [TourController::class, 'store'])->name('tours.store');
+Route::get('/tours/{tour}', [TourController::class, 'show'])->name('tours.show');
+Route::post('/create/ticket', [PageController::class, 'createTicket'])->name('create.ticket');
 
-Route::get('/login',[AuthController::class, 'login'])->name('login');
+Route::get('/login', [AuthController::class, 'login'])->name('login');
 
-Route::get('language/{locale}',[LanguageController::class, 'change_locale'])->name('locale.change');
+Route::get('language/{locale}', [LanguageController::class, 'change_locale'])->name('locale.change');
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     Lfm::routes();
 });

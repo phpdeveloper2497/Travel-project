@@ -19,6 +19,9 @@
     "Location": "Адрес",
     "PO Box": "Почтовый ящик",
     "Tour": "Тур",
+    "Ticket" : "Сообщение",
+    "Tickets" : "Сообщения",
+    "Our Awesome" : "Наш потрясающий",
     "Delivery Information": "информация о доставке",
     "Privacy Policy": "политика конфиденциальности",
     "Terms & Conditions": "Условия использования",
@@ -79,7 +82,9 @@
     "Partners" : "Партнеры",
     "Partner" : "Партнер",
     "Book now" : "Забронируйте сейчас",
-    "Send" : "Yuborish",
+    "Send" : "Отправить",
+    "Settings" : "Настройки",
+    "Setting" : "Параметр",
 
 
 
