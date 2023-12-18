@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('phone2');
             $table->json('address');
             $table->text('location');
-            $table->text('email1');
-            $table->text('email2');
+            $table->string('email1');
+            $table->string('email2');
             $table->string('facebook');
             $table->string('instagram');
             $table->string('telegram');

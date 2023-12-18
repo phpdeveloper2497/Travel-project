@@ -22,6 +22,8 @@ class SettingSeeder extends Seeder
                 'uz' =>'uzbek',
             ]),
             'location' =>'location tashkent city',
+            'email1' => 'php@php.ru',
+            'email2' => 'php@php.com',
             'facebook' => 'facebook',
             'instagram' => 'instagram',
             'telegram' => 'telegram',

@@ -14,19 +14,15 @@ class StoreBookRequest extends FormRequest
         return true;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
-     */
+
     public function rules(): array
     {
         return [
+            'tour_id' => 'required|integer',
             'first_name' => 'required',
             'last_name' => 'required',
-//            'phone' => 'required|string|max:255',
-            'phone' => 'required|min:8|max:11|regex:/^([0-9\s\-\+\(\)]*)$/',
-            'description' => 'nullable',
+            'phone' => 'required',
+            'comment' => 'nullable',
         ];
     }
 }

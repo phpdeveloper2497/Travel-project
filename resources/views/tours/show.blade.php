@@ -12,11 +12,15 @@
                     </div>
                     <div class="description-images mb-4">
                         <div class="row">
-                            <div class="col"><img src="{{asset('images/trending/trending1.jpg')}}" alt class="rounded">
+                            <div class="col">
+                                <img src="{{ $tour->getFirstMediaUrl('tour') }}" alt="image" class="mb-3 rounded">
+{{--                                <img src="{{asset('images/trending/trending1.jpg')}}" alt class="rounded">--}}
                             </div>
-                            <div class="col"><img src="{{asset('images/trending/trending2.jpg')}}" alt class="rounded">
+                            <div class="col">
+                                <img src="{{asset('images/trending/trending2.jpg')}}" alt class="rounded">
                             </div>
-                            <div class="col"><img src="{{asset('images/trending/trending3.jpg')}}" alt class="rounded">
+                            <div class="col">
+                                <img src="{{asset('images/trending/trending3.jpg')}}" alt class="rounded">
                             </div>
                         </div>
                     </div>
@@ -122,22 +126,22 @@
                         <form action="{{ route('tours.store') }}" method="post" >
                             @csrf
                             <div class="form-group mb-2">
-                                <input type="hidden" name="tourId" value="{{$tour->id}}" >
+                                <input type="hidden" name="tour_id" id="tour_id" value="{{$tour->id}}" >
                             </div>
                             <div class="form-group mb-2">
-                                <input type="text" name="first_name" class="form-control"
+                                <input type="text" name="first_name" id="first_name" class="form-control"
                                        placeholder="{{__('First Name')}}">
                             </div>
                             <div class="form-group mb-2">
-                                <input type="text" name="last_name" class="form-control"
+                                <input type="text" name="last_name" id="last_name" class="form-control"
                                        placeholder="{{__('Last Name')}}">
                             </div>
                             <div class="form-group mb-2">
-                                <input type="text" name="phone" class="form-control"
+                                <input type="text" name="phone" id="phone" class="form-control"
                                        placeholder="{{__('Phone')}}">
                             </div>
                             <div class="textarea mb-2">
-                                <textarea name="description" placeholder="{{__('Enter a message')}}"></textarea>
+                                <textarea name="comment" id="phcommentone" placeholder="{{__('Enter a message')}}"></textarea>
                             </div>
                             <div class="comment-btn text-center">
                                 <input class="nir-btn" type="submit" value="{{__('Send')}}">

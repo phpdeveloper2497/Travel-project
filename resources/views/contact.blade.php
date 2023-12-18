@@ -21,7 +21,7 @@
                                         </div>
                                         <div class="info-content">
                                             <h3>{{__('Office Location')}}</h3>
-                                            <p class="m-0">{{$settings->address}}</p>
+                                            <p class="m-0">{{$settings->addres}}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -47,12 +47,12 @@
                                             <p class="m-0"><a
                                                     href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
                                                     class="__cf_email__"
-                                                    data-cfemail="3851565e57784a5d59544b50515d545c165b5755">[email&#160;protected]</a>
+                                                    data-cfemail="3851565e57784a5d59544b50515d545c165b5755">{{ $settings->email1 }}</a> {{--[email&#160;protected]--}}
                                             </p>
                                             <p class="m-0"><a
                                                     href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
                                                     class="__cf_email__"
-                                                    data-cfemail="3c5459504c7c4e595d504f5455595058125f5351">[email&#160;protected]</a>
+                                                    data-cfemail="3c5459504c7c4e595d504f5455595058125f5351">{{ $settings->email2 }}</a>
                                             </p>
                                         </div>
                                     </div>
