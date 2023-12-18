@@ -37,12 +37,21 @@
                             iaculis molestie sagittis maecenas aenean eget molestie sagittis.
                         </p>
                         <ul>
-                            <li class="white"><strong>{{__('PO Box')}}:</strong> +47-252-254-2542</li>
-                            <li class="white"><strong>{{__('Location')}}:</strong> {{$settings->address}}
+                            <li class="white"><strong>{{__('PO Box')}}:</strong>
+                                <p class="m-0 white">{{ $settings->phone1 }}</p>
+                                <p class="m-0 white">{{ $settings->phone2 }}</p>
                             </li>
+                            <br>
+                            <li class="white"><strong>{{__('Location')}}:</strong>
+                                {{$settings->address}}
+                            </li>
+                            <br>
                             <li class="white"><strong>{{__('Email')}}:</strong> <a
                                     href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
-                                    class="__cf_email__" data-cfemail="4d24232b220d193f2c3b28212423632e2220">[email&#160;protected]</a>
+                                    class="__cf_email__" data-cfemail="4d24232b220d193f2c3b28212423632e2220">
+                                    <p class="white">{{ $settings->email1  }} </p>
+                                    <p class="white">{{ $settings->email2  }} </p>
+                                </a>
                             </li>
                         </ul>
                     </div>

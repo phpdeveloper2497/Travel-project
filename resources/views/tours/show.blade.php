@@ -13,28 +13,21 @@
                     <div class="description-images mb-4">
                         <div class="row">
                             <div class="col">
-                                <img src="{{ $tour->getFirstMediaUrl('tour') }}" alt="image" class="mb-3 rounded">
+                                <img src="{{ $tour->getFirstMediaUrl('tour_main') }}" alt="image" class="mb-3 rounded">
 {{--                                <img src="{{asset('images/trending/trending1.jpg')}}" alt class="rounded">--}}
-                            </div>
-                            <div class="col">
-                                <img src="{{asset('images/trending/trending2.jpg')}}" alt class="rounded">
-                            </div>
-                            <div class="col">
-                                <img src="{{asset('images/trending/trending3.jpg')}}" alt class="rounded">
                             </div>
                         </div>
                     </div>
                     <div class="description mb-2">
                         <h4>{{__('Description')}}</h4>
-                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
-                            graphic or web designs. </p>
+                        <p>{!! $tour->description_en !!}  </p>
                         <div class="tour-includes mb-4">
                             <table>
                                 <tbody>
                                 <tr>
-                                    <td><i class="fa fa-clock-o pink mr-1" aria-hidden="true"></i> 5 Days</td>
+                                    <td><i class="fa fa-clock-o pink mr-1" aria-hidden="true"></i>{{$tour->days}} Days</td>
                                     <td><i class="fa fa-group pink mr-1" aria-hidden="true"></i> Max People : 26</td>
-                                    <td><i class="fa fa-calendar pink mr-1" aria-hidden="true"></i> Jan 18 - Dec 21</td>
+                                    <td><i class="fa fa-calendar pink mr-1" aria-hidden="true"></i> {{$tour->from_to}}</td>
                                 </tr>
                                 <tr>
                                     <td><i class="fa fa-user pink mr-1" aria-hidden="true"></i> Min Age : 10+</td>
@@ -47,67 +40,67 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="description mb-2">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 mb-2">
-                                    <div class="desc-box bg-grey p-4 rounded">
-                                        <h5 class="mb-2">Departure & Return Location</h5>
-                                        <p class="mb-0">John F.K. International Airport(Google Map)</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-2">
-                                    <div class="desc-box bg-grey p-4 rounded">
-                                        <h5 class="mb-2">Bedroom</h5>
-                                        <p class="mb-0">4 Bedrooms</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-2">
-                                    <div class="desc-box bg-grey p-4 rounded">
-                                        <h5 class="mb-2">Departure Time</h5>
-                                        <p class="mb-0">3 Hours Before Flight Time</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-2">
-                                    <div class="desc-box bg-grey p-4 rounded">
-                                        <h5 class="mb-2">Departure Time</h5>
-                                        <p class="mb-0">3 Hours Before Flight Time</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-2">
-                                    <div class="desc-box bg-grey p-4 rounded">
-                                        <h5 class="mb-2">Price Includes</h5>
-                                        <ul>
-                                            <li class="d-block pb-1"><i class="fa fa-check pink mr-1"></i> Air Fares
-                                            </li>
-                                            <li class="d-block pb-1"><i class="fa fa-check pink mr-1"></i> 3 Nights
-                                                Hotel Accomodation
-                                            </li>
-                                            <li class="d-block pb-1"><i class="fa fa-check pink mr-1"></i> Tour Guide
-                                            </li>
-                                            <li class="d-block"><i class="fa fa-check pink mr-1"></i> Entrance Fees</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-2">
-                                    <div class="desc-box bg-grey p-4 rounded">
-                                        <h5 class="mb-2">Departure & Return Location</h5>
-                                        <ul>
-                                            <li class="d-block pb-1"><i class="fa fa-close pink mr-1"></i> Guide Service
-                                                Fee
-                                            </li>
-                                            <li class="d-block pb-1"><i class="fa fa-close pink mr-1"></i> Driver
-                                                Service Fee
-                                            </li>
-                                            <li class="d-block pb-1"><i class="fa fa-close pink mr-1"></i> Any Private
-                                                Expenses
-                                            </li>
-                                            <li class="d-block"><i class="fa fa-close pink mr-1"></i> Room Service Fees
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+{{--                        <div class="description mb-2">--}}
+{{--                            <div class="row">--}}
+{{--                                <div class="col-lg-6 col-md-6 mb-2">--}}
+{{--                                    <div class="desc-box bg-grey p-4 rounded">--}}
+{{--                                        <h5 class="mb-2">Departure & Return Location</h5>--}}
+{{--                                        <p class="mb-0">John F.K. International Airport(Google Map)</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-6 col-md-6 mb-2">--}}
+{{--                                    <div class="desc-box bg-grey p-4 rounded">--}}
+{{--                                        <h5 class="mb-2">Bedroom</h5>--}}
+{{--                                        <p class="mb-0">4 Bedrooms</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-6 col-md-6 mb-2">--}}
+{{--                                    <div class="desc-box bg-grey p-4 rounded">--}}
+{{--                                        <h5 class="mb-2">Departure Time</h5>--}}
+{{--                                        <p class="mb-0">3 Hours Before Flight Time</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-6 col-md-6 mb-2">--}}
+{{--                                    <div class="desc-box bg-grey p-4 rounded">--}}
+{{--                                        <h5 class="mb-2">Departure Time</h5>--}}
+{{--                                        <p class="mb-0">3 Hours Before Flight Time</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-6 col-md-6 mb-2">--}}
+{{--                                    <div class="desc-box bg-grey p-4 rounded">--}}
+{{--                                        <h5 class="mb-2">Price Includes</h5>--}}
+{{--                                        <ul>--}}
+{{--                                            <li class="d-block pb-1"><i class="fa fa-check pink mr-1"></i> Air Fares--}}
+{{--                                            </li>--}}
+{{--                                            <li class="d-block pb-1"><i class="fa fa-check pink mr-1"></i> 3 Nights--}}
+{{--                                                Hotel Accomodation--}}
+{{--                                            </li>--}}
+{{--                                            <li class="d-block pb-1"><i class="fa fa-check pink mr-1"></i> Tour Guide--}}
+{{--                                            </li>--}}
+{{--                                            <li class="d-block"><i class="fa fa-check pink mr-1"></i> Entrance Fees</li>--}}
+{{--                                        </ul>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-6 col-md-6 mb-2">--}}
+{{--                                    <div class="desc-box bg-grey p-4 rounded">--}}
+{{--                                        <h5 class="mb-2">Departure & Return Location</h5>--}}
+{{--                                        <ul>--}}
+{{--                                            <li class="d-block pb-1"><i class="fa fa-close pink mr-1"></i> Guide Service--}}
+{{--                                                Fee--}}
+{{--                                            </li>--}}
+{{--                                            <li class="d-block pb-1"><i class="fa fa-close pink mr-1"></i> Driver--}}
+{{--                                                Service Fee--}}
+{{--                                            </li>--}}
+{{--                                            <li class="d-block pb-1"><i class="fa fa-close pink mr-1"></i> Any Private--}}
+{{--                                                Expenses--}}
+{{--                                            </li>--}}
+{{--                                            <li class="d-block"><i class="fa fa-close pink mr-1"></i> Room Service Fees--}}
+{{--                                            </li>--}}
+{{--                                        </ul>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>

@@ -16,11 +16,6 @@ class SettingSeeder extends Seeder
         Setting::create([
             'phone1' => '+9989056565',
             'phone2' => '+998954056565',
-            'address'=>json_encode([
-                'en' =>'english',
-                'ru' =>'russian',
-                'uz' =>'uzbek',
-            ]),
             'location' =>'location tashkent city',
             'email1' => 'php@php.ru',
             'email2' => 'php@php.com',

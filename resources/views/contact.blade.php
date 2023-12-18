@@ -21,7 +21,7 @@
                                         </div>
                                         <div class="info-content">
                                             <h3>{{__('Office Location')}}</h3>
-                                            <p class="m-0">{{$settings->addres}}</p>
+                                            <p class="m-0">{{$settings->address}}</p>
                                         </div>
                                     </div>
                                 </div>

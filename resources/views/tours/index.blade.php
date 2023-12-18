@@ -13,7 +13,7 @@
                         @foreach($tours as $tour)
                             <div class="col-lg-4 col-md-3">
                                 <div class="trend-item2 rounded">
-                                    <a href="#" style="background-image: {{ $tour->getFirstMediaUrl('tour') }});"></a>
+                                  <img src="{{ $tour->getFirstMediaUrl('tour_gallery') }}" alt="image" class=" rounded">
                                     <div class="color-overlay"></div>
                                 </div>
                             </div>
