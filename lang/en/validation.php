@@ -21,6 +21,7 @@ return [
         'numeric' => 'The :attribute must be between :min and :max.',
         'string'  => 'The :attribute must be between :min and :max characters.',
     ],
+    'phone' => 'The :attribute field must be a valid number.',
     'boolean'              => 'The :attribute field must be true or false.',
     'can'                  => 'The :attribute field contains an unauthorized value.',
     'confirmed'            => 'The :attribute confirmation does not match.',

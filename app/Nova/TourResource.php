@@ -79,6 +79,10 @@ class TourResource extends Resource
                 2 => 'Остановлено',
                 3 => 'Удалено',
             ]),
+            Images::make('ИЗОБРАЖЕНИЕ', 'tour_main') // second parameter is the media collection name
+            ->conversionOnIndexView('thumb') // conversion used to display the image on the model's index page
+            ->fullSize()
+                ->enableExistingMedia(),
             Currency::make('Price')->currency('UZS')->locale('uz'),
             Number::make('Category Id')
                 ->rules('nullable', 'integer'),

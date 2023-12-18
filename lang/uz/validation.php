@@ -21,6 +21,7 @@ return [
         'numeric' => ':Attribute ning qiymati :min va :max orasida bo‘lishi kerak.',
         'string'  => ':Attribute dagi belgilar soni :min va :max orasida bo‘lishi kerak.',
     ],
+    'phone' => ':attribute maydoni toʻgʻri raqam boʻlishi kerak.',
     'boolean'              => ':Attribute maydoni faqat mantiqiy qiymatni qabul qiladi.',
     'can'                  => 'The :attribute field contains an unauthorized value.',
     'confirmed'            => ':Attribute tasdiqlangani bilan mos kelmadi.',

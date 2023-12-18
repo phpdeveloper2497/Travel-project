@@ -19,6 +19,9 @@
     "Location": "Manzil",
     "PO Box": "Pochta qutisi",
     "Tour": "Sayohat",
+    "Ticket" : "Xabar",
+    "Tickets" : "Xabarlar",
+    "Our Awesome" : "Bizning Ajoyib",
     "Delivery Information": "Yetkazib berish haqida ma'lumot",
     "Privacy Policy": "Maxfiylik siyosati",
     "Terms & Conditions": "Foydalanish shartlari",
@@ -79,6 +82,8 @@
     "Partner" : "Hamkor",
     "Book now": "Hoziroq band qilish",
     "Send" : "Jo'natish",
+    "Settings" : "Sozlamalar",
+    "Setting" : "Sozlama",
 
 
 

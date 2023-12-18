@@ -1,6 +1,4 @@
 <x-layouts.main>
-
-
     <div class="banner trending overflow-hidden">
         <div class="banner-main">
             <div class="row banner-slider">
@@ -1053,7 +1051,7 @@
                 <div class="call-banner-inner w-75 mx-auto text-center px-5">
                     <div class="trend-content-main">
                         <div class="trend-content mb-5 pb-2 px-5">
-                            <h2><a href="#">{{__('Explore Your Life,')}} <span
+                            <h2 class="text-uppercase"><a href="#">{{__('Explore Your Life,')}} <span
                                         class="theme1"> {{__('Travel Where You Want!')}}</span></a>
                             </h2>
                         </div>
@@ -1067,8 +1065,8 @@
     <section class="trending recent-articles pb-6">
         <div class="container">
             <div class="section-title mb-6 w-75 mx-auto text-center">
-                <h4 class="mb-1 theme1">{{__('Our Blogs Offers')}}</h4>
-                <h2 class="mb-1">{{__('Recent')}} <span class="theme">{{__('Articles')}} & {{__('Posts')}}</span></h2>
+                <h4 class="mb-1 theme1 text-uppercase">{{__('Our Blogs Offers')}}</h4>
+                <h2 class="mb-1 text-uppercase"><span class="theme">{{__('Articles')}} & {{__('Posts')}}</span></h2>
             </div>
             <div class="recent-articles-inner">
                 <div class="row">
@@ -1083,11 +1081,6 @@
                                         <h4><a href="{{ route('posts.show', ['post' => $post]) }}">
                                                 {{ $post->title }}
                                             </a></h4>
-                                        <p class="mb-3">
-{{--                                            {!! $post->desc !!}--}}
-
-                                            {{--                                            {!!  strlen($post->desc) > 50 ? substr($post->desc,0,50)."..." : $post->desc!!}--}}
-                                        </p>
                                         <div class="entry-meta d-flex align-items-center justify-content-between">
                                             <div class="entry-button d-flex align-items-center mb-2">
                                                 <a href="{{route('posts.show',['post' => $post])}}" class="nir-btn">
@@ -1108,8 +1101,8 @@
         <section class="our-partner pt-0 pb-6">
             <div class="container">
                 <div class="section-title mb-6 w-75 mx-auto text-center">
-                    <h4 class="mb-1 theme1">{{__('Our Partners')}}</h4>
-                    <h2 class="mb-1">{{__('Our Awesome')}} <span class="theme">{{__('partners')}}</span></h2>
+                    <h4 class="mb-1 theme1 text-uppercase">{{__('Our Partners')}}</h4>
+                    <h2 class="mb-1 text-uppercase">{{__('Our Awesome')}} <span class="theme">{{__('partners')}}</span></h2>
                 </div>
                 <div class="row align-items-center partner-in partner-slider">
                     @foreach($partners as $partner)
