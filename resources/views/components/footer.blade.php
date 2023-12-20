@@ -13,8 +13,8 @@
                     @foreach($galleries as $gallery)
                         <div class="col-md-3 col-sm-6">
                             <div class="insta-image rounded">
-                                <a href="gallery.html"><img src="{{$gallery->getFirstMediaUrl('gallery')}} "
-                                                            alt="insta"></a>
+                                <a href="#"><img src="{{$gallery->getFirstMediaUrl('gallery')}} "
+                                                 alt="insta"></a>
                             </div>
                         </div>
                     @endforeach
@@ -33,8 +33,7 @@
                             <h1 class="align-items-baseline m-0">TOUR</h1>
                         </div>
                         <p class="mt-3 mb-3 white">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio suspendisse leo neque
-                            iaculis molestie sagittis maecenas aenean eget molestie sagittis.
+                            {{__("We believe that traveling around the world should not be difficult: it should be something that everyone should be able to do at least once in their life. Whether you choose to spend a few years or a few months traveling this beautiful planet, it's important to see what's out there. It is in your hands to make your dream come true and take the first step. Don't know where to start? You can always call one of our travel consultants and get a free consultation!")}}
                         </p>
                         <ul>
                             <li class="white"><strong>{{__('PO Box')}}:</strong>
@@ -76,14 +75,18 @@
         <div class="container">
             <div class="copyright-inner rounded p-3 d-md-flex align-items-center justify-content-between">
                 <div class="copyright-text">
-                    <p class="m-0 white">2022 {{config('app.name')}}.</p>
+                    <p class="m-0 white"> {{__("SOCIAL MEDIA")}}</p>
                 </div>
                 <div class="social-links">
                     <ul>
-                        <li><a href="{{ $settings->facebook }}"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="{{ $settings->instagram }}"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="{{ $settings->telegram }}"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
-                        <li><a href="{{ $settings->youtube }}"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a href="{{ $settings->facebook }}"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="{{ $settings->instagram }}"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="{{ $settings->telegram }}"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="{{ $settings->youtube }}"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>

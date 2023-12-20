@@ -113,6 +113,12 @@
         <div class="container">
             <div class="contact-info-main mt-0">
                 <div class="row">
+                    <h5>
+                        {{__("Book travel far in advance")}}
+                    </h5>
+                    <p>
+                        {{__("After all that preparation, you’re ready to book your trip around the world, which will likely be a round-the-world plane ticket, a journey by sea, or a combination of flights and ground transportation.")}}
+                    </p>
                     <h1>{{__('Book now')}}</h1>
                     <div class="col-lg-6">
 

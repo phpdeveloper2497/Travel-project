@@ -12,22 +12,24 @@
                 <div class="row d-flex align-items-center justify-content-between">
                     <div class="col-lg-6 ps-4">
                         <div class="about-content text-center text-lg-start">
-                            <h4 class="theme d-inline-block mb-0">Get To Know Us</h4>
-                            <h2 class="border-b mb-2 pb-1">Explore All Tour of the world with us.</h2>
-                            <p class="border-b mb-2 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <h4 class="theme d-inline-block mb-0">{{__("Get To Know Us")}}</h4>
+                            <h2 class="border-b mb-2 pb-1">{{__("Explore All Tour of the world with us.")}}</h2>
+                            <p class="border-b mb-2 pb-2">
+                                {{__("There are many factors to keep in mind when evaluating your trip,including what to do before leaving and your budget.To help you get started, we have put together a guide on how to travel the world,including everything from how to start looking into your trip to how to save money once you are abroad.") }}
+                            </p>
+
                             <div class="about-listing">
                                 <ul class="d-flex justify-content-between">
-                                    <li><i class="icon-location-pin theme"></i> Tour Guide</li>
-                                    <li><i class="icon-briefcase theme"></i> Friendly Price</li>
-                                    <li><i class="icon-folder theme"></i> Reliable Tour Package</li>
+                                    <li><i class="icon-location-pin theme"></i> {{__("Tour Guide")}}</li>
+                                    <li><i class="icon-briefcase theme"></i> {{__("Friendly Price")}}</li>
+                                    <li><i class="icon-folder theme"></i> {{__("Reliable Tour Package")}}</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 mb-4 pe-4">
                         <div class="about-image" style="animation:none; background:transparent;">
-                            <img src="{{asset('images/travel.png')}}" alt>{__{('')}}
+                            <img src="{{asset('images/travel.png')}}" >
                         </div>
                     </div>
                     <div class="col-lg-12">
@@ -39,7 +41,7 @@
                                         <div class="counter-item border-end pe-4">
                                             <div class="counter-content">
                                                 <h2 class="value mb-0 theme">20</h2>
-                                                <span class="m-0">Years Experiences</span>
+                                                <span class="m-0">{{__("Years Experiences")}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -47,7 +49,7 @@
                                         <div class="counter-item border-end pe-4">
                                             <div class="counter-content">
                                                 <h2 class="value mb-0 theme">530</h2>
-                                                <span class="m-0">Tour Packages</span>
+                                                <span class="m-0">{{__("Tour Packages")}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -55,7 +57,7 @@
                                         <div class="counter-item border-end pe-4">
                                             <div class="counter-content">
                                                 <h2 class="value mb-0 theme">850</h2>
-                                                <span class="m-0">Happy Customers</span>
+                                                <span class="m-0">{{__("Happy Customers")}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -63,7 +65,7 @@
                                         <div class="counter-item">
                                             <div class="counter-content">
                                                 <h2 class="value mb-0 theme">320</h2>
-                                                <span class="m-0">Award Winning</span>
+                                                <span class="m-0">{{__("Award Winning")}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -80,10 +82,10 @@
 
 
     <section class="about-us pb-0">
-        <div class="section-shape section-shape1" style="background-image: url(images/shape8.png);"></div>
+        <div class="section-shape section-shape1" style="background-image: url({{asset("images/shape8.png")}});"></div>
         <div class="container">
             <div class="section-title mb-6 w-50 mx-auto text-center">
-                <h2 class="mb-1">Find <span class="theme">Travel Perfection</span></h2>
+                <h2 class="mb-1"> <span class="theme">{{__("Find Travel Perfection")}}</span></h2>
             </div>
 
             <div class="why-us">
@@ -95,7 +97,7 @@
                                     <div class="why-us-icon mb-1">
                                         <i class="icon-flag theme"></i>
                                     </div>
-                                    <h4><a href="about.html">Tell Us What You want To Do</a></h4>
+                                    <h4><a href="#">{{__("Tell Us What You want To Do")}}</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +107,7 @@
                                     <div class="why-us-icon mb-1">
                                         <i class="icon-location-pin theme"></i>
                                     </div>
-                                    <h4><a href="about.html">Share Your Travel Locations</a></h4>
+                                    <h4><a href="#">{{__("Share Your Travel Locations")}}</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +117,7 @@
                                     <div class="why-us-icon mb-1">
                                         <i class="icon-directions theme"></i>
                                     </div>
-                                    <h4><a href="about.html">Share Your Travel Preference</a></h4>
+                                    <h4><a href="#">{{__("Share Your Travel Preference")}}</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +127,7 @@
                                     <div class="why-us-icon mb-1">
                                         <i class="icon-compass theme"></i>
                                     </div>
-                                    <h4><a href="about.html">Here 100% Trusted Tour Agency</a></h4>
+                                    <h4><a href="#">{{__("Here 100% Trusted Tour Agency")}}</a></h4>
                                 </div>
                             </div>
                         </div>

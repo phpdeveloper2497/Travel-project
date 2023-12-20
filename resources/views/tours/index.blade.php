@@ -27,14 +27,6 @@
                             </div>
                             <div class="col-lg-3 col-md-3">
                                 <div class="trend-content text-md-end text-center">
-                                    <div class="rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                    </div>
-                                    <small>200 Reviews</small>
                                     <div class="trend-price my-2">
                                         <span class="mb-0">{{$tour->from_to}}</span>
                                         <h3 class="mb-0">{{ $tour->price }}</h3>

@@ -8,25 +8,15 @@
                             <img src="{{asset('images/new-deal/deal1.jpg')}}" alt="image" class>
                             <div class="trend-content1 px-4  top-50 bottom-inherit translatey-50">
                                 <h5 class="theme1 mb-0"><i class="flaticon-location-pin"></i> Norway</h5>
-                                <h2 class="mb-1 white"><a href="grid-leftfilter.html" class="white">Norway Lake</a></h2>
-                                <div class="rating-main pb-1">
-                                    <div class="rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="ms-2 white">(16)</span>
-                                    </div>
-                                </div>
+                                <h2 class="mb-1 white"><a href="#" class="white">Norway Lake</a></h2>
                                 <div class="entry-meta text-center">
                                     <div class="entry-author mb-1">
-                                        <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $180.00</span> | Per
-                                            person</p>
+                                        <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $180.00</span>
+                                            {{__("Person")}}</p>
                                     </div>
                                     <div class="entry-author">
                                         <i class="icon-calendar white"></i>
-                                        <span class="fw-bold white"> 6 Days Tours</span>
+                                        <span class="fw-bold white"> 6 {{__("Days Tours")}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -40,26 +30,16 @@
                             <img src="{{asset('images/new-deal/deal2.jpg')}}" alt="image" class>
                             <div class="trend-content1 px-4 top-50 bottom-inherit translatey-50">
                                 <h5 class="theme1 mb-0"><i class="flaticon-location-pin"></i> Moscow</h5>
-                                <h2 class="mb-1 white"><a href="grid-leftfilter.html" class="white">Capital Tour</a>
+                                <h2 class="mb-1 white"><a href="#" class="white">Capital Tour</a>
                                 </h2>
-                                <div class="rating-main pb-1">
-                                    <div class="rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="ms-2 white">(21)</span>
-                                    </div>
-                                </div>
                                 <div class="entry-meta text-center">
                                     <div class="entry-author mb-1">
-                                        <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $240.00</span> | Per
-                                            person</p>
+                                        <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $240.00</span>
+                                            {{__("Person")}}</p>
                                     </div>
                                     <div class="entry-author">
                                         <i class="icon-calendar white"></i>
-                                        <span class="fw-bold white"> 5 Days Tours</span>
+                                        <span class="fw-bold white"> 5 {{__("Days Tours")}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -73,26 +53,16 @@
                             <img src="{{asset('images/new-deal/deal3.jpg')}}" alt="image" class>
                             <div class="trend-content1 px-4 top-50 bottom-inherit translatey-50">
                                 <h5 class="theme1 mb-0"><i class="flaticon-location-pin"></i> Italy</h5>
-                                <h2 class="mb-1 white"><a href="grid-leftfilter.html" class="white">Rome Historical</a>
+                                <h2 class="mb-1 white"><a href="#" class="white">Rome Historical</a>
                                 </h2>
-                                <div class="rating-main pb-1">
-                                    <div class="rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="ms-2 white">(18)</span>
-                                    </div>
-                                </div>
                                 <div class="entry-meta text-center">
                                     <div class="entry-author mb-1">
-                                        <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $190.00</span> | Per
-                                            person</p>
+                                        <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $190.00</span>
+                                            {{__("Person")}}</p>
                                     </div>
                                     <div class="entry-authorr">
                                         <i class="icon-calendar white"></i>
-                                        <span class="fw-bold white"> 9 Days Tours</span>
+                                        <span class="fw-bold white"> 9 {{__("Days Tours")}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -106,25 +76,15 @@
                             <img src="{{asset('images/new-deal/deal4.jpg')}}" alt="image" class>
                             <div class="trend-content1 px-4 top-50 bottom-inherit translatey-50">
                                 <h5 class="theme1 mb-0"><i class="flaticon-location-pin"></i> America</h5>
-                                <h2 class="mb-1 white"><a href="grid-leftfilter.html" class="white">Golden Gate</a></h2>
-                                <div class="rating-main pb-1">
-                                    <div class="rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="ms-2 white">(34)</span>
-                                    </div>
-                                </div>
+                                <h2 class="mb-1 white"><a href="#" class="white">Golden Gate</a></h2>
                                 <div class="entry-meta text-center">
                                     <div class="entry-author mb-1">
-                                        <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $310.00</span> | Per
-                                            person</p>
+                                        <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $310.00</span>
+                                            {{__("Person")}}</p>
                                     </div>
                                     <div class="entry-author">
                                         <i class="icon-calendar white"></i>
-                                        <span class="fw-bold white"> 10 Days Tours</span>
+                                        <span class="fw-bold white"> 10 {{__("Days Tours")}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -138,26 +98,16 @@
                             <img src="{{asset('images/new-deal/deal5.jpg')}}" alt="image" class>
                             <div class="trend-content1 px-4 top-50 bottom-inherit translatey-50">
                                 <h5 class="theme1 mb-0"><i class="flaticon-location-pin"></i> Austria</h5>
-                                <h2 class="mb-1 white"><a href="grid-leftfilter.html" class="white">Vienna,
+                                <h2 class="mb-1 white"><a href="#" class="white">Vienna,
                                         Hallstatt</a></h2>
-                                <div class="rating-main pb-1">
-                                    <div class="rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="ms-2 white">(22)</span>
-                                    </div>
-                                </div>
                                 <div class="entry-meta text-center">
                                     <div class="entry-author mb-1">
-                                        <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $150.00</span> | Per
-                                            person</p>
+                                        <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $150.00</span>
+                                            {{__("Person")}}</p>
                                     </div>
                                     <div class="entry-author">
                                         <i class="icon-calendar white"></i>
-                                        <span class="fw-bold white"> 3 Days Tours</span>
+                                        <span class="fw-bold white"> 3 {{__("Days Tours")}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +121,7 @@
 
 
     <div class="form-main">
-        <div class="section-shape section-shape1 top-0" style="background-image: url(images/shape8.png);"></div>
+        <div class="section-shape section-shape1 top-0" style="background-image: url({{asset("images/shape8.png")}});"></div>
         <div class="container">
             <div class="row align-items-center form-content rounded position-relative ms-5 me-5">
                 <div class="col-lg-2 p-0">
@@ -240,10 +190,7 @@
                                     <div class="why-us-icon mb-1">
                                         <i class="icon-flag theme"></i>
                                     </div>
-                                    <h4><a href="about.html">Tell Us What You want To Do</a></h4>
-                                    <p class="mb-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                        officia.</p>
-                                    <p class="mb-0 theme">100+ Reviews</p>
+                                    <h4><a href="#">{{__("Tell Us What You want To Do")}}</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -253,10 +200,7 @@
                                     <div class="why-us-icon mb-1">
                                         <i class="icon-location-pin theme"></i>
                                     </div>
-                                    <h4><a href="about.html">Share Your Travel Locations</a></h4>
-                                    <p class="mb-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                        officia.</p>
-                                    <p class="mb-0 theme">100+ Reviews</p>
+                                    <h4><a href="#">{{__("Share Your Travel Locations")}}</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -266,10 +210,7 @@
                                     <div class="why-us-icon mb-1">
                                         <i class="icon-directions theme"></i>
                                     </div>
-                                    <h4><a href="about.html">Share Your Travel Preference</a></h4>
-                                    <p class="mb-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                        officia.</p>
-                                    <p class="mb-0 theme">100+ Reviews</p>
+                                    <h4><a href="#">{{__("Share Your Travel Preference")}}</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -279,10 +220,7 @@
                                     <div class="why-us-icon mb-1">
                                         <i class="icon-compass theme"></i>
                                     </div>
-                                    <h4><a href="about.html">Here 100% Trusted Tour Agency</a></h4>
-                                    <p class="mb-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                        officia.</p>
-                                    <p class="mb-0 theme">100+ Reviews</p>
+                                    <h4><a href="#"> {{__("Here 100% Trusted Tour Agency")}}</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -311,10 +249,10 @@
                             <div
                                 class="trend-content d-flex align-items-center justify-content-between position-absolute bottom-0 p-4 w-100 z-index">
                                 <div class="trend-content-title">
-                                    <h5 class="mb-0"><a href="grid-leftfilter.html" class="theme1">England</a></h5>
+                                    <h5 class="mb-0"><a href="#" class="theme1">England</a></h5>
                                     <h3 class="mb-0 white">London</h3>
                                 </div>
-                                <span class="white bg-theme p-1 px-2 rounded">15 Tours</span>
+                                <span class="white bg-theme p-1 px-2 rounded">15 {{__("Tours")}}</span>
                             </div>
                             <div class="color-overlay"></div>
                         </div>
@@ -329,11 +267,11 @@
                                     <div
                                         class="trend-content d-flex align-items-center justify-content-between position-absolute bottom-0 p-4 w-100 z-index">
                                         <div class="trend-content-title">
-                                            <h5 class="mb-0"><a href="grid-leftfilter.html" class="theme1">Italy</a>
+                                            <h5 class="mb-0"><a href="#" class="theme1">Italy</a>
                                             </h5>
                                             <h3 class="mb-0 white">Caspian Valley</h3>
                                         </div>
-                                        <span class="white bg-theme p-1 px-2 rounded">18 Tours</span>
+                                        <span class="white bg-theme p-1 px-2 rounded">18 {{__("Tours")}}</span>
                                     </div>
                                     <div class="color-overlay"></div>
                                 </div>
@@ -346,11 +284,11 @@
                                     <div
                                         class="trend-content d-flex align-items-center justify-content-between position-absolute bottom-0 p-4 w-100 z-index">
                                         <div class="trend-content-title">
-                                            <h5 class="mb-0"><a href="grid-leftfilter.html" class="theme1">Tokyo</a>
+                                            <h5 class="mb-0"><a href="#" class="theme1">Tokyo</a>
                                             </h5>
                                             <h3 class="mb-0 white">Japan</h3>
                                         </div>
-                                        <span class="white bg-theme p-1 px-2 rounded">21 Tours</span>
+                                        <span class="white bg-theme p-1 px-2 rounded">21 {{__("Tours")}}</span>
                                     </div>
                                     <div class="color-overlay"></div>
                                 </div>
@@ -367,7 +305,7 @@
                                             </h5>
                                             <h3 class="mb-0 white">Russia</h3>
                                         </div>
-                                        <span class="white bg-theme p-1 px-2 rounded">15 Tours</span>
+                                        <span class="white bg-theme p-1 px-2 rounded">15 {{__("Tours")}}</span>
                                     </div>
                                     <div class="color-overlay"></div>
                                 </div>
@@ -380,11 +318,11 @@
                                     <div
                                         class="trend-content d-flex align-items-center justify-content-between position-absolute bottom-0 p-4 w-100 z-index">
                                         <div class="trend-content-title">
-                                            <h5 class="mb-0"><a href="grid-leftfilter.html" class="theme1">Florida</a>
+                                            <h5 class="mb-0"><a href="#" class="theme1">Florida</a>
                                             </h5>
                                             <h3 class="mb-0 white">America</h3>
                                         </div>
-                                        <span class="white bg-theme p-1 px-2 rounded">32 Tours</span>
+                                        <span class="white bg-theme p-1 px-2 rounded">32 {{__("Tours")}}</span>
                                     </div>
                                     <div class="color-overlay"></div>
                                 </div>
@@ -416,26 +354,17 @@
                                 <div class="trend-meta bg-theme white px-3 py-2 rounded">
                                     <div class="entry-author">
                                         <i class="icon-calendar"></i>
-                                        <span class="fw-bold"> 9 Days Tours</span>
+                                        <span class="fw-bold"> 9 {{__("Days Tours")}}</span>
                                     </div>
                                 </div>
                                 <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Croatia</h5>
-                                <h3 class="mb-1"><a href="grid-leftfilter.html">Piazza Castello</a></h3>
-                                <div class="rating-main d-flex align-items-center pb-2">
-                                    <div class="rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                    </div>
-                                    <span class="ms-2">(12)</span>
-                                </div>
-                                <p class=" border-b pb-2 mb-2">Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum</p>
+                                <h3 class="mb-1"><a href="#">Piazza Castello</a></h3>
+                                <p class=" border-b pb-2 mb-2">
+                                    {{__("A great travel package to the seaside and highlands")}}
+                                </p>
                                 <div class="entry-meta">
                                     <div class="entry-author d-flex align-items-center">
-                                        <p class="mb-0"><span class="theme fw-bold fs-5"> $170.00</span> | Per person
+                                        <p class="mb-0"><span class="theme fw-bold fs-5"> $170.00</span> {{__("Person")}}
                                         </p>
                                     </div>
                                 </div>
@@ -452,26 +381,17 @@
                                 <div class="trend-meta bg-theme white px-3 py-2 rounded">
                                     <div class="entry-author">
                                         <i class="icon-calendar"></i>
-                                        <span class="fw-bold"> 9 Days Tours</span>
+                                        <span class="fw-bold"> 9 {{__("Days Tours")}}</span>
                                     </div>
                                 </div>
                                 <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Greece</h5>
-                                <h3 class="mb-1"><a href="grid-leftfilter.html">Santorini, Oia</a></h3>
-                                <div class="rating-main d-flex align-items-center pb-2">
-                                    <div class="rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                    </div>
-                                    <span class="ms-2">(38)</span>
-                                </div>
-                                <p class=" border-b pb-2 mb-2">Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum</p>
+                                <h3 class="mb-1"><a href="#">Santorini, Oia</a></h3>
+                                <p class=" border-b pb-2 mb-2">
+                                    {{__("A great travel package to the seaside and highlands")}}
+                                </p>
                                 <div class="entry-meta">
                                     <div class="entry-author d-flex align-items-center">
-                                        <p class="mb-0"><span class="theme fw-bold fs-5"> $180.00</span> | Per person
+                                        <p class="mb-0"><span class="theme fw-bold fs-5"> $180.00</span> {{__("Person")}}
                                         </p>
                                     </div>
                                 </div>
@@ -488,26 +408,17 @@
                                 <div class="trend-meta bg-theme white px-3 py-2 rounded">
                                     <div class="entry-author">
                                         <i class="icon-calendar"></i>
-                                        <span class="fw-bold"> 9 Days Tours</span>
+                                        <span class="fw-bold"> 9 {{__("Days Tours")}}</span>
                                     </div>
                                 </div>
                                 <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Maldives</h5>
-                                <h3 class="mb-1"><a href="grid-leftfilter.html">Hurawalhi Island</a></h3>
-                                <div class="rating-main d-flex align-items-center pb-2">
-                                    <div class="rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                    </div>
-                                    <span class="ms-2">(18)</span>
-                                </div>
-                                <p class=" border-b pb-2 mb-2">Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum</p>
+                                <h3 class="mb-1"><a href="#">Hurawalhi Island</a></h3>
+                                <p class=" border-b pb-2 mb-2">
+                                    {{__("A great travel package to the seaside and highlands")}}
+                                </p>
                                 <div class="entry-meta">
                                     <div class="entry-author d-flex align-items-center">
-                                        <p class="mb-0"><span class="theme fw-bold fs-5"> $260.00</span> | Per person
+                                        <p class="mb-0"><span class="theme fw-bold fs-5"> $260.00</span> {{__("Person")}}
                                         </p>
                                     </div>
                                 </div>
@@ -543,27 +454,20 @@
                                         <div class="trend-meta bg-theme white px-3 py-2 rounded">
                                             <div class="entry-author">
                                                 <i class="icon-calendar"></i>
-                                                <span class="fw-bold"> 4 Days Tours</span>
+                                                <span class="fw-bold"> 4 {{__("Days Tours")}}</span>
                                             </div>
                                         </div>
                                         <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Spain</h5>
                                         <h3 class="mb-1"><a href="#">Barcelona city beach</a></h3>
                                         <div class="rating-main d-flex align-items-center pb-2">
-                                            <div class="rating">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                            </div>
-                                            <span class="ms-2">(21)</span>
                                         </div>
-                                        <p class=" border-b pb-2 mb-2">Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum</p>
+                                        <p class=" border-b pb-2 mb-2">
+                                            {{__("A great travel package to the seaside and highlands")}}
+                                        </p>
                                         <div class="entry-meta">
                                             <div class="entry-author d-flex align-items-center">
-                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $220.00</span> | Per
-                                                    person</p>
+                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $220.00</span>
+                                                    {{__("Person")}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -579,27 +483,20 @@
                                         <div class="trend-meta bg-theme white px-3 py-2 rounded">
                                             <div class="entry-author">
                                                 <i class="icon-calendar"></i>
-                                                <span class="fw-bold"> 7 Days Tours</span>
+                                                <span class="fw-bold"> 7 {{__("Days Tours")}}</span>
                                             </div>
                                         </div>
                                         <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Indonesia</h5>
                                         <h3 class="mb-1"><a href="#">Bali Province</a></h3>
                                         <div class="rating-main d-flex align-items-center pb-2">
-                                            <div class="rating">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                            </div>
-                                            <span class="ms-2">(11)</span>
                                         </div>
-                                        <p class=" border-b pb-2 mb-2">Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum</p>
+                                        <p class=" border-b pb-2 mb-2">
+                                            {{__("A great travel package to the seaside and highlands")}}
+                                        </p>
                                         <div class="entry-meta">
                                             <div class="entry-author d-flex align-items-center">
-                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $210.00</span> | Per
-                                                    person</p>
+                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $210.00</span>
+                                                    {{__("Person")}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -615,27 +512,20 @@
                                         <div class="trend-meta bg-theme white px-3 py-2 rounded">
                                             <div class="entry-author">
                                                 <i class="icon-calendar"></i>
-                                                <span class="fw-bold"> 3 Days Tours</span>
+                                                <span class="fw-bold"> 3 {{__("Days Tours")}}</span>
                                             </div>
                                         </div>
                                         <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Russia</h5>
                                         <h3 class="mb-1"><a href="#">Red City Land</a></h3>
                                         <div class="rating-main d-flex align-items-center pb-2">
-                                            <div class="rating">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                            </div>
-                                            <span class="ms-2">(25)</span>
                                         </div>
-                                        <p class=" border-b pb-2 mb-2">Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum</p>
+                                        <p class=" border-b pb-2 mb-2">
+                                            {{__("A great travel package to the seaside and highlands")}}
+                                        </p>
                                         <div class="entry-meta">
                                             <div class="entry-author d-flex align-items-center">
-                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $120.00</span> | Per
-                                                    person</p>
+                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $120.00</span>
+                                                    {{__("Person")}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -651,27 +541,20 @@
                                         <div class="trend-meta bg-theme white px-3 py-2 rounded">
                                             <div class="entry-author">
                                                 <i class="icon-calendar"></i>
-                                                <span class="fw-bold"> 5 Days Tours</span>
+                                                <span class="fw-bold"> 5 {{__("Days Tours")}}</span>
                                             </div>
                                         </div>
                                         <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Bangladesh</h5>
                                         <h3 class="mb-1"><a href="#">Cox's bazar Beach</a></h3>
                                         <div class="rating-main d-flex align-items-center pb-2">
-                                            <div class="rating">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                            </div>
-                                            <span class="ms-2">(32)</span>
                                         </div>
-                                        <p class=" border-b pb-2 mb-2">Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum</p>
+                                        <p class=" border-b pb-2 mb-2">
+                                            {{__("A great travel package to the seaside and highlands")}}
+                                        </p>
                                         <div class="entry-meta">
                                             <div class="entry-author d-flex align-items-center">
-                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $100.00</span> | Per
-                                                    person</p>
+                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $100.00</span>
+                                                    {{__("Person")}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -687,24 +570,14 @@
                                     <h5 class="theme1 mb-1"><i class="flaticon-location-pin"></i> Norway</h5>
                                     <h3 class="mb-1 white"><a href="#" class="white">Norway Lake</a>
                                     </h3>
-                                    <div class="rating-main d-flex align-items-center pb-2">
-                                        <div class="rating">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                        </div>
-                                        <span class="ms-2 white">(16)</span>
-                                    </div>
                                     <div class="entry-meta d-flex align-items-center justify-content-between">
                                         <div class="entry-author d-flex align-items-center">
                                             <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $180.00</span> |
-                                                Per person</p>
+                                                Per {{__("Person")}}</p>
                                         </div>
                                         <div class="entry-author">
                                             <i class="icon-calendar white"></i>
-                                            <span class="fw-bold white"> 6 Days Tours</span>
+                                            <span class="fw-bold white"> 6 {{__("Days Tours")}}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -718,24 +591,14 @@
                                     <h5 class="theme1 mb-1"><i class="flaticon-location-pin"></i> Egpyt</h5>
                                     <h3 class="mb-1 white"><a href="#" class="white">Pyramid Land</a>
                                     </h3>
-                                    <div class="rating-main d-flex align-items-center pb-2">
-                                        <div class="rating">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                        </div>
-                                        <span class="ms-2 white">(16)</span>
-                                    </div>
                                     <div class="entry-meta d-flex align-items-center justify-content-between">
                                         <div class="entry-author d-flex align-items-center">
                                             <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $180.00</span> |
-                                                Per person</p>
+                                                Per {{__("Person")}}</p>
                                         </div>
                                         <div class="entry-author">
                                             <i class="icon-calendar white"></i>
-                                            <span class="fw-bold white"> 6 Days Tours</span>
+                                            <span class="fw-bold white"> 6 {{__("Days Tours")}}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -747,26 +610,17 @@
                                 <img src="{{asset('images/trending/trendingb-1.jpg')}}" alt="image" class>
                                 <div class="trend-content1 p-4">
                                     <h5 class="theme1 mb-1"><i class="flaticon-location-pin"></i> Usa</h5>
-                                    <h3 class="mb-1 white"><a href="#" class="white">New York
-                                            City</a></h3>
-                                    <div class="rating-main d-flex align-items-center pb-2">
-                                        <div class="rating">
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                        </div>
-                                        <span class="ms-2 white">(12)</span>
-                                    </div>
+                                    <h3 class="mb-1 white"><a href="#" class="white">
+                                            New York City
+                                        </a></h3>
                                     <div class="entry-meta d-flex align-items-center justify-content-between">
                                         <div class="entry-author d-flex align-items-center">
                                             <p class="mb-0 white"><span class="theme1 fw-bold fs-5"> $140.00</span> |
-                                                Per person</p>
+                                                {{__("Person")}}</p>
                                         </div>
                                         <div class="entry-author">
                                             <i class="icon-calendar white"></i>
-                                            <span class="fw-bold white"> 3 Days Tours</span>
+                                            <span class="fw-bold white"> 3 {{__("Days Tours")}}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -789,13 +643,14 @@
                         <div class="about-content text-center text-lg-start">
                             <h4 class="theme d-inline-block mb-0">{{__('Get To Know Us')}}</h4>
                             <h2 class="border-b mb-2 pb-1">{{__("Explore All Tour of the world with us.")}}</h2>
-                            <p class="border-b mb-2 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="border-b mb-2 pb-2">
+                                {{__("There are many factors to keep in mind when evaluating your trip,including what to do before leaving and your budget.To help you get started, we have put together a guide on how to travel the world,including everything from how to start looking into your trip to how to save money once you are abroad.") }}
+                            </p>
                             <div class="about-listing">
                                 <ul class="d-flex justify-content-between">
-                                    <li><i class="icon-location-pin theme"></i> Tour Guide</li>
-                                    <li><i class="icon-briefcase theme"></i> Friendly Price</li>
-                                    <li><i class="icon-folder theme"></i> Reliable Tour Package</li>
+                                    <li><i class="icon-location-pin theme"></i> {{__("Tour Guide")}}</li>
+                                    <li><i class="icon-briefcase theme"></i> {{__("Friendly Price")}}</li>
+                                    <li><i class="icon-folder theme"></i> {{__("Reliable Tour Package")}}</li>
                                 </ul>
                             </div>
                         </div>
@@ -814,7 +669,7 @@
                                         <div class="counter-item border-end pe-4">
                                             <div class="counter-content">
                                                 <h2 class="value mb-0 theme">20</h2>
-                                                <span class="m-0">Years Experiences</span>
+                                                <span class="m-0">{{__("Years Experiences")}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -822,7 +677,7 @@
                                         <div class="counter-item border-end pe-4">
                                             <div class="counter-content">
                                                 <h2 class="value mb-0 theme">530</h2>
-                                                <span class="m-0">Tour Packages</span>
+                                                <span class="m-0">{{__("Tour Packages")}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -830,7 +685,7 @@
                                         <div class="counter-item border-end pe-4">
                                             <div class="counter-content">
                                                 <h2 class="value mb-0 theme">850</h2>
-                                                <span class="m-0">Happy Customers</span>
+                                                <span class="m-0">{{__("Happy Customers")}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -838,7 +693,7 @@
                                         <div class="counter-item">
                                             <div class="counter-content">
                                                 <h2 class="value mb-0 theme">320</h2>
-                                                <span class="m-0">Award Winning</span>
+                                                <span class="m-0">{{__("Award Winning")}}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -880,26 +735,18 @@
                                         <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Croatia</h5>
                                         <h3 class="mb-1"><a href="#">Piazza Castello</a></h3>
                                         <div class="rating-main d-flex align-items-center pb-2">
-                                            <div class="rating">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                            </div>
-                                            <span class="ms-2">(12)</span>
                                         </div>
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                        <p>{{__("A great travel package to the seaside and highlands")}}</p>
                                         <div class="trend-meta border-b pb-2 mb-2">
                                             <div class="entry-author theme">
                                                 <i class="icon-calendar"></i>
-                                                <span> 9 Days Tours</span>
+                                                <span> 9 {{__("Days Tours")}}</span>
                                             </div>
                                         </div>
                                         <div class="entry-meta">
                                             <div class="entry-author d-flex align-items-center">
-                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $170.00</span> | Per
-                                                    person</p>
+                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $170.00</span> son
+                                                   </p>
                                             </div>
                                         </div>
                                     </div>
@@ -923,26 +770,18 @@
                                         <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Greece</h5>
                                         <h3 class="mb-1"><a href="#">Santorini, Oia</a></h3>
                                         <div class="rating-main d-flex align-items-center pb-2">
-                                            <div class="rating">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                            </div>
-                                            <span class="ms-2">(18)</span>
                                         </div>
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                        <p>{{__("A great travel package to the seaside and highlands")}}</p>
                                         <div class="trend-meta border-b pb-2 mb-2">
                                             <div class="entry-author theme">
                                                 <i class="icon-calendar"></i>
-                                                <span> 7 Days Tours</span>
+                                                <span> 7 {{__("Days Tours")}}</span>
                                             </div>
                                         </div>
                                         <div class="entry-meta">
                                             <div class="entry-author d-flex align-items-center">
-                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $210.00</span> | Per
-                                                    person</p>
+                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $210.00</span> son
+                                                    </p>
                                             </div>
                                         </div>
                                     </div>
@@ -966,26 +805,19 @@
                                         <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Norway</h5>
                                         <h3 class="mb-1"><a href="#">Norway Lake</a></h3>
                                         <div class="rating-main d-flex align-items-center pb-2">
-                                            <div class="rating">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                            </div>
-                                            <span class="ms-2">(17)</span>
                                         </div>
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                        <p>{{__("A great travel package to the seaside and highlands")}}</p>
                                         <div class="trend-meta border-b pb-2 mb-2">
                                             <div class="entry-author theme">
                                                 <i class="icon-calendar"></i>
-                                                <span> 6 Days Tours</span>
+                                                <span> 6 {{__("Days Tours")}}</span>
                                             </div>
                                         </div>
                                         <div class="entry-meta">
                                             <div class="entry-author d-flex align-items-center">
-                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $185.00</span> | Per
-                                                    person</p>
+                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $185.00</span>
+                                                    {{__("Person")}}
+                                                    </p>
                                             </div>
                                         </div>
                                     </div>
@@ -1006,29 +838,21 @@
                                 </div>
                                 <div class="col-lg-7 col-md-8">
                                     <div class="trend-content py-3 position-relative">
-                                        <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> Maldives</h5>
-                                        <h3 class="mb-1"><a href="#">Hurawalhi Island</a></h3>
+                                        <h5 class="theme mb-1"><i class="flaticon-location-pin"></i> {{__("Maldives")}}</h5>
+                                        <h3 class="mb-1"><a href="#">{{__("Hurawalhi Island")}}</a></h3>
                                         <div class="rating-main d-flex align-items-center pb-2">
-                                            <div class="rating">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                            </div>
-                                            <span class="ms-2">(32)</span>
                                         </div>
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                        <p>{{__("A great travel package to the seaside and highlands")}}</p>
                                         <div class="trend-meta border-b pb-2 mb-2">
                                             <div class="entry-author theme">
                                                 <i class="icon-calendar"></i>
-                                                <span> 4 Days Tours</span>
+                                                <span> 4 {{__("Days Tours")}}</span>
                                             </div>
                                         </div>
                                         <div class="entry-meta">
                                             <div class="entry-author d-flex align-items-center">
-                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $260.00</span> | Per
-                                                    person</p>
+                                                <p class="mb-0"><span class="theme fw-bold fs-5"> $260.00</span> |
+                                                    {{__("Person")}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1102,7 +926,8 @@
             <div class="container">
                 <div class="section-title mb-6 w-75 mx-auto text-center">
                     <h4 class="mb-1 theme1 text-uppercase">{{__('Our Partners')}}</h4>
-                    <h2 class="mb-1 text-uppercase">{{__('Our Awesome')}} <span class="theme">{{__('partners')}}</span></h2>
+                    <h2 class="mb-1 text-uppercase">{{__('Our Awesome')}} <span class="theme">{{__('partners')}}</span>
+                    </h2>
                 </div>
                 <div class="row align-items-center partner-in partner-slider">
                     @foreach($partners as $partner)
