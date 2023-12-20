@@ -7,7 +7,6 @@
     "Contact": "Bog'lanish",
     "Quick link" : "Tez havola",
     "Follow on Instagram": "Instagramda kuzatib boring",
-    "Travelin": "Travelin",
     "All rights reserved": "Barcha huquqlar himoyalangan",
     "We Support": "Qo'llab-quvvatlaymiz",
     "Subscribe": "Obuna boʻling",
@@ -41,8 +40,6 @@
     "INFORMATION ABOUT US" : "BIZ HAQIMIZDA MA'LUMOT",
     "Office Location" : "Ofis joylashuvi",
     "Phone Number" : "Telefon raqami",
-    "Email Address" : "Elektron pochta manzili",
-    "Send Message" : "Xabar yuborish",
     "First Name" : "Ism",
     "Last Name" : "Familiya",
     "Phone" : "Telefon",
@@ -53,7 +50,6 @@
     "Explore Your Life," : "Hayotingizni o'rganing,",
     "Travel Where You Want!" : "Istagan joyingizga sayohat qiling!",
     "partners" : "hamkorlar",
-    "Our Partners" : "Bizning hamkorlarimiz",
     "Top Offers" : "Eng yaxshi takliflar",
     "Special" : "Maxsus",
     "Offers" : "Takliflar",
@@ -107,7 +103,11 @@
     "Days Tours" : "Kunlik sayohatlar",
     "Book travel far in advance" : "Sayohatni oldindan bron qiling",
     "After all that preparation, you’re ready to book your trip around the world, which will likely be a round-the-world plane ticket, a journey by sea, or a combination of flights and ground transportation.": "Barcha tayyorgarlikdan so'ng, siz butun dunyo bo'ylab sayohatingizni bron qilishga tayyorsiz, bu butun dunyo bo'ylab samolyot chiptasi, dengiz orqali sayohat yoki parvozlar va yerdagi transportning kombinatsiyasi bo'lishi mumkin.",
-
+    "Place" : "Manzil",
+    "Places" : "Manzillar",
+    "Info" : "Informatsiya",
+    "Per person" : "kishi.",
+    "Price": "Narx",
 
 
 

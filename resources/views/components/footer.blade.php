@@ -5,7 +5,7 @@
             <div class="insta-inner">
 
                 <div class="follow-button">
-                    <a href="#">
+                    <a href="{{ $settings->instagram }}">
                         <h5 class="m-0 rounded"><i class="fab fa-instagram"></i>{{__('Follow on Instagram')}}</h5>
                     </a>
                 </div>
@@ -13,7 +13,7 @@
                     @foreach($galleries as $gallery)
                         <div class="col-md-3 col-sm-6">
                             <div class="insta-image rounded">
-                                <a href="#"><img src="{{$gallery->getFirstMediaUrl('gallery')}} "
+                                <a href="{{ $settings->instagram }}"><img src="{{$gallery->getFirstMediaUrl('gallery')}} "
                                                  alt="insta"></a>
                             </div>
                         </div>
@@ -46,8 +46,8 @@
                             </li>
                             <br>
                             <li class="white"><strong>{{__('Email')}}:</strong> <a
-                                    href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
-                                    class="__cf_email__" data-cfemail="4d24232b220d193f2c3b28212423632e2220">
+                                    href="mailto:{{$settings->email1}}"
+                                    class="__cf_email__" >
                                     <p class="white">{{ $settings->email1  }} </p>
                                     <p class="white">{{ $settings->email2  }} </p>
                                 </a>

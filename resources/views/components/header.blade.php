@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-{{--<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">--}}
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Travelin - Travel Tour Booking HTML Templates</title>
+    <title>YO-TOUR</title>
 
     <x-css_files>
 

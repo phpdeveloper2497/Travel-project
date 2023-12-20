@@ -22,6 +22,10 @@ return new class extends Migration {
             $table->integer('category_id')->nullable();
             $table->integer('sort_order')->nullable();
             $table->integer('status')->default(1);
+            $table->boolean('banner')->default(false);
+            $table->boolean('top')->default(false);
+            $table->boolean('discount')->default(false);
+            $table->integer('discount_amount')->nullable();
             $table->timestamps();
         });
     }

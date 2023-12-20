@@ -45,12 +45,12 @@
                                         <div class="info-content ps-4">
                                             <h3>{{__('Email Address')}}</h3>
                                             <p class="m-0"><a
-                                                    href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
+                                                    href="mailto:{{$settings->email1}}"
                                                     class="__cf_email__"
-                                                    data-cfemail="3851565e57784a5d59544b50515d545c165b5755">{{ $settings->email1 }}</a> {{--[email&#160;protected]--}}
+                                                    data-cfemail="3851565e57784a5d59544b50515d545c165b5755">{{ $settings->email1 }}</a>
                                             </p>
                                             <p class="m-0"><a
-                                                    href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
+                                                    href="mailto:{{$settings->email2}}"
                                                     class="__cf_email__"
                                                     data-cfemail="3c5459504c7c4e595d504f5455595058125f5351">{{ $settings->email2 }}</a>
                                             </p>
@@ -63,8 +63,7 @@
                                     <div class="col-lg-6">
                                         <div class="map rounded overflow-hidden rounded mb-md-4">
                                             <div style="width: 100%">
-                                                <iframe height="500"
-                                                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(mangal%20bazar)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                               {!! $settings->location !!}
 {{--                                           {{ $settings->location}}--}}
                                             </div>
                                         </div>
@@ -128,7 +127,7 @@
                                                 @enderror
                                             </div>
                                             <div class="comment-btn text-center">
-                                                <input type="submit" class="nir-btn" id="submit2"
+                                                <input type="submit" class="nir-btn text-uppercase" id="submit2"
                                                        value="{{__('Send Message')}}">
                                             </div>
                                         </form>

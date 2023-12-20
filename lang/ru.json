@@ -1,5 +1,5 @@
 {
-    "Home": "Дом",
+    "Home": "Главная",
     "Tours": "Туры",
     "Blog": "Блог",
     "Gallery": "Галерея",
@@ -46,7 +46,7 @@
     "Last Name" : "Фамилия",
     "Phone" : "Телефон",
     "Enter a message" : "Введите сообщение",
-    "Send Message" : "Send Message",
+    "Send Message" : "Отправить сообщение",
     "View Detail" : "Посмотреть детали",
     "Description" : "Описание",
     "Explore Your Life," : "Исследуйте свою жизнь,",
@@ -108,7 +108,11 @@
     "Days Tours" : "Дневные туры",
     "Book travel far in advance" : "Бронируйте поездку заранее",
     "After all that preparation, you’re ready to book your trip around the world, which will likely be a round-the-world plane ticket, a journey by sea, or a combination of flights and ground transportation.": "После всей этой подготовки вы готовы забронировать кругосветное путешествие, которое, скорее всего, будет представлять собой билет на самолет вокруг света, морское путешествие или сочетание полета и наземного транспорта.",
-
+    "Place" : "Место",
+    "Places" : "Места",
+    "Info" : "Информация",
+    "Per person" : "чел.",
+    "Price": "Цена",
 
 
     "(and :count more error)": "(и ещё :count ошибка)",

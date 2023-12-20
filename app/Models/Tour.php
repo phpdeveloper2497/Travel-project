@@ -9,6 +9,7 @@ use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Spatie\Translatable\HasTranslations;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 
 class Tour extends Model implements Sortable, HasMedia
 {
@@ -43,6 +44,17 @@ class Tour extends Model implements Sortable, HasMedia
         'season' => 'array',
     ];
 
+    protected function description(): Attribute
+    {
+        return Attribute::make(
+            get: function (){
+                $locale = \App::currentLocale();
+                $description = 'description_'.$locale;
+                return $this->$description;
+            },
+        );
+    }
+
     public function registerMediaCollections(): void
     {
         $this->addMediaCollection('tour_main')->singleFile();
@@ -55,5 +67,10 @@ class Tour extends Model implements Sortable, HasMedia
         $this->addMediaConversion('thumb')
             ->width(300)
             ->height(300);
+    }
+
+    public function place()
+    {
+        return $this->belongsTo(Place::class, 'category_id', 'id');
     }
 }

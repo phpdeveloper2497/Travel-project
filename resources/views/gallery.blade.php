@@ -13,7 +13,6 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mansonry-item">
                     <div class="gallery-item mb-4 rounded overflow-hidden">
                         <div class="gallery-image">
-{{--                            @dd($gallery);--}}
                             <img src={{$gallery->getFirstMediaUrl('gallery')}} alt="image">
                             <div class="overlay"></div>
                         </div>

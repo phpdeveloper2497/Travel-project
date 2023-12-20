@@ -5,8 +5,8 @@
 
                 <div class="navbar-header">
                     <a class="navbar-brand d-flex" href="{{ route('home') }}">
-                        <img src={{ asset("images/logo.svg") }} alt="YO-TOUR-LOGO" class="mr-1">
-                        <h1 class="align-items-baseline m-0">TOUR</h1>
+                        <img style="height: 48px;" src='{{ asset("images/logo.svg") }}' alt="YO-TOUR-LOGO" class="mr-1">
+                        <h3 class="align-items-baseline m-0" style="font-size: 32px">TOUR</h3>
                     </a>
                 </div>
 

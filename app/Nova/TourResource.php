@@ -22,6 +22,10 @@ use Eminiarts\Tabs\Tabs;
 use Eminiarts\Tabs\Tab;
 use SimpleSquid\Nova\Fields\AdvancedNumber\AdvancedNumber;
 use Outl1ne\NovaSortable\Traits\HasSortableRows;
+use Laravel\Nova\Fields\BelongsTo;
+use Trin4ik\NovaSwitcher\NovaSwitcher;
+use Laravel\Nova\Fields\FormData;
+use Laravel\Nova\Http\Requests\NovaRequest;
 
 class TourResource extends Resource
 {
@@ -41,6 +45,7 @@ class TourResource extends Resource
     {
         return [
             ID::make()->sortable(),
+            BelongsTo::make(__('Place'), 'place', PlaceResource::class)->showCreateRelationButton()->modalSize('7xl'),
             Text::make('Title')->translatable(),
             Textarea::make('Short Description')->translatable(),
             Tabs::make('Description', [
@@ -83,9 +88,21 @@ class TourResource extends Resource
             ->conversionOnIndexView('thumb') // conversion used to display the image on the model's index page
             ->fullSize()
                 ->enableExistingMedia(),
-            Currency::make('Price')->currency('UZS')->locale('uz'),
-            Number::make('Category Id')
-                ->rules('nullable', 'integer'),
+            Currency::make('Price')->min(1)->max(100000)->step(1),
+            NovaSwitcher::make(__("Banner"), 'banner')->trueLabel('Вкл')
+                ->falseLabel('Выкл'),
+            NovaSwitcher::make(__("Top"), 'top')->trueLabel('Вкл')
+                ->falseLabel('Выкл'),
+            NovaSwitcher::make(__("Discount"), 'discount')->trueLabel('Вкл')
+                ->falseLabel('Выкл'),
+            Number::make(__("Discount amount"), 'discount_amount')->dependsOn(
+                ['discount'],
+                function (Text $field, NovaRequest $request, FormData $formData) {
+                    if ($formData->discount == 1 && $formData->discount == true) {
+                        $field->readonly(false)->rules(['required', 'integer']);
+                    }
+                }
+            )->min(1)->max(100)->step(1),
             Panel::make('Images', [
                 Images::make('Images', 'tour_gallery') // second parameter is the media collection name
                 ->conversionOnIndexView('thumb') // conversion used to display the image on the model's index page

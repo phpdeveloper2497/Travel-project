@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateTicketRequest;
 use App\Models\Gallery;
 use App\Models\Partner;
+use App\Models\Place;
 use App\Models\Ticket;
+use App\Models\Tour;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -13,8 +15,20 @@ class PageController extends Controller
     public function home()
     {
         $partners = Partner::query()->where('status', '=', true)->orderBy('sort_order')->get();
+        $places = Place::query()->with('media', 'tours')->where('status', '=', true)->orderBy('sort_order')->get();
+        $banner_tours = Tour::query()->with('media', 'place')
+            ->where('status', '=', 1)
+            ->where('banner', '=', true)
+            ->get();
+        $top_tours = Tour::query()->with('media', 'place')
+            ->where('status', '=', 1)
+            ->where('top', '=', true)
+            ->get();
         return view('home', [
-            'partners' => $partners->load('media')
+            'partners' => $partners->load('media'),
+            'places' => $places,
+            'banner_tours' => $banner_tours,
+            'top_tours' => $top_tours,
         ]);
     }
 

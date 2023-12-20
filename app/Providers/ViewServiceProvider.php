@@ -31,8 +31,8 @@ class ViewServiceProvider extends ServiceProvider
             $view->with('posts', Post::with('media')->latest()->limit(3)->get());
         });
 
-        View::composer('*', function ($view) {
-            $view->with('settings', Setting::first());
-        });
+//        View::composer('*', function ($view) {
+//            $view->with('settings', Setting::first());
+//        });
     }
 }

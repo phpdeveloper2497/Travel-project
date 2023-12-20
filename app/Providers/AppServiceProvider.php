@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Setting;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -25,5 +26,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with('current_locale', App::currentLocale());
             $view->with('all_locales', config('app.all_locales'));
         });
+
+        View::share('settings', Setting::first());
     }
 }
