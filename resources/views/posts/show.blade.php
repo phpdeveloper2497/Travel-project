@@ -1,7 +1,7 @@
 <x-layouts.main>
 
     <x-page-header>
-        {{__('Show')}}
+        {{$post->title}}
     </x-page-header>
 
     <section class="blog">
