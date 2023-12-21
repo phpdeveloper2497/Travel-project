@@ -7,7 +7,7 @@
     <section class="blog">
         <div class="container">
             <div class="row flex-row-reverse">
-                <div class="col-lg-9 mb-4">
+                <div class="col-lg-12 mb-4">
                     <div class="blog-single">
                         <div class="blog-wrapper">
                             <h2 class="lh-sm">
