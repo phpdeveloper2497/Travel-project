@@ -47,30 +47,4 @@
             </div>
         </div>
     </section>
-    <section class="trending pt-6 pb-0 bg-success">
-        <div class="container">
-            <div class="col-lg-12">
-                <div class="col-lg-6">
-                    @if (Session::has('successMsg'))
-                        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                            <div id="liveToast" class="toast fade show" role="alert"
-                                 aria-live="assertive" aria-atomic="true">
-                                <div class="toast-header">
-                                    <div class="rounded me-2 bg-success"
-                                         style="width: 16px; height: 16px"></div>
-                                    <strong class="me-auto">{{__('Message')}}</strong>
-                                </div>
-                                <div class="toast-body">
-                                    {{ Session::get('successMsg') }}
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-        @endif
-        <div id="contactform-error-msg"></div>
-    </section>
-
-
 </x-layouts.main>

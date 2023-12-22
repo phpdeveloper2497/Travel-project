@@ -68,70 +68,72 @@
                 </p>
                 <div class="col-md-12">
                     <h1 class="text-uppercase text-center">{{__('Book now')}}</h1>
-{{--                    <div class="col-lg-12">--}}
-{{--                        <div class="col-lg-6">--}}
-{{--                            @if (Session::has('successMsg'))--}}
-{{--                                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">--}}
-{{--                                    <div id="liveToast" class="toast fade show" role="alert"--}}
-{{--                                         aria-live="assertive" aria-atomic="true">--}}
-{{--                                        <div class="toast-header">--}}
-{{--                                            <div class="rounded me-2 bg-primary"--}}
-{{--                                                 style="width: 16px; height: 16px"></div>--}}
-{{--                                            <strong class="me-auto">{{__('Message')}}</strong>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="toast-body">--}}
-{{--                                            {{ Session::get('successMsg') }}--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            @endif--}}
-                            <div id="contactform-error-msg"></div>
-                                <form method="post" action="{{ route('tours.store') }}">
-                                    @csrf()
-                                    <div class="form-group mb-2">
-                                        <input type="hidden" name="tour_id" id="tour_id" value="{{$tour->id}}">
+                    <div class="col-lg-12">
+                        <div class="col-lg-6">
+                            @if (Session::has('successMsg'))
+                                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                    <div id="liveToast" class="toast fade show" role="alert"
+                                         aria-live="assertive" aria-atomic="true">
+                                        <div class="toast-header">
+                                            <div class="rounded me-2 bg-success"
+                                                 style="width: 16px; height: 16px"></div>
+                                            <strong class="me-auto">{{__('Message')}}</strong>
+                                        </div>
+                                        <div class="toast-body">
+                                            {{ Session::get('successMsg') }}
+                                        </div>
                                     </div>
-                                    <div class="form-group mb-2">
-                                        <input type="text" name="first_name"
-                                               class="form-control @error('first_name') is-invalid @enderror"
-                                               placeholder="{{__('First Name')}}"
-                                               value="{{ old('first_name') }}">
-                                        @error('first_name')
-                                        <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <input type="text" name="last_name"
-                                               class="form-control @error('last_name') is-invalid @enderror"
-                                               placeholder="{{__('Last Name')}}" value="{{ old('last_name') }}">
-                                        @error('last_name')
-                                        <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
-                                    </div>
-                                    <div class="form-group mb-2">
-                                        <input type="text" name="phone"
-                                               class="form-control @error('phone') is-invalid @enderror"
-                                               placeholder="{{__('Phone')}}" value="{{ old('phone') }}">
-                                        @error('phone')
-                                        <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
-                                    </div>
-                                    <div class="textarea mb-2">
-                                                <textarea class="@error('message') is-invalid @enderror" name="message"
-                                                          placeholder="{{__('Enter a message')}}">{{ old('message') }}</textarea>
-                                        @error('message')
-                                        <div class="alert alert-danger">{{ $message }}</div>
-                                        @enderror
-                                    </div>
-                                    <div class="comment-btn text-center">
-                                        <input type="submit" class="nir-btn text-uppercase" id="submit2"
-                                               value="{{__('Send')}}">
-                                    </div>
-                                </form>
+                                </div>
+                            @endif
                         </div>
                     </div>
+{{--                    <div id="contactform-error-msg"></div>--}}
+                    <form method="post" action="{{ route('tours.store') }}">
+                        @csrf()
+                        <div class="form-group mb-2">
+                            <input type="hidden" name="tour_id" id="tour_id" value="{{$tour->id}}">
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="text" name="first_name"
+                                   class="form-control @error('first_name') is-invalid @enderror"
+                                   placeholder="{{__('First Name')}}"
+                                   value="{{ old('first_name') }}">
+                            @error('first_name')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="text" name="last_name"
+                                   class="form-control @error('last_name') is-invalid @enderror"
+                                   placeholder="{{__('Last Name')}}" value="{{ old('last_name') }}">
+                            @error('last_name')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="text" name="phone"
+                                   class="form-control @error('phone') is-invalid @enderror"
+                                   placeholder="{{__('Phone')}}" value="{{ old('phone') }}">
+                            @error('phone')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="textarea mb-2">
+                                                <textarea class="@error('message') is-invalid @enderror" name="message"
+                                                          placeholder="{{__('Enter a message')}}">{{ old('message') }}</textarea>
+                            @error('message')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="comment-btn text-center">
+                            <input type="submit" class="nir-btn text-uppercase" id="submit2"
+                                   value="{{__('Send')}}">
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
+        </div>
     </section>
 
     <section class="gallery pt-6 pb-60" id="gallery">

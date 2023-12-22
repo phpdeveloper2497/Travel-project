@@ -28,7 +28,7 @@ class TourController extends Controller
     {
         Book::create($request->validated());
         $request->session()->flash('successMsg', __('Successfully booked'));
-        return redirect()->route('tours.index');
+        return redirect()->back();
     }
 
 
