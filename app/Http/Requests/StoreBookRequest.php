@@ -19,10 +19,27 @@ class StoreBookRequest extends FormRequest
     {
         return [
             'tour_id' => 'required|integer',
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'phone' => 'required',
-            'comment' => 'nullable',
+            'first_name' => [
+                'required',
+                'string',
+                'max:255'
+            ],
+            'last_name' => [
+                'required',
+                'string',
+                'max:255'
+            ],
+
+            'phone' => [
+                'nullable',
+                'phone:uz'
+            ],
+            'message' => [
+                'required',
+                'max:1024',
+                'string'
+            ],
+
         ];
     }
 }

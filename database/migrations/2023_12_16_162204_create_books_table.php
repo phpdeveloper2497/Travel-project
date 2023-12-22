@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->text('phone');
-            $table->text('comment')->nullable();
+            $table->text('message')->nullable();
             $table->timestamps();
         });
     }

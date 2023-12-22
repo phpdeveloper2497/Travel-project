@@ -13,16 +13,21 @@
                         @foreach($tours as $tour)
                             <div class="col-lg-4 col-md-3">
                                 <div class="trend-item2 rounded">
-                                  <img src="{{ $tour->getFirstMediaUrl('tour_main') }}" alt="image" class=" rounded">
+                                    <img src="{{ $tour->getFirstMediaUrl('tour_main') }}" alt="image" class=" rounded">
                                     <div class="color-overlay"></div>
                                 </div>
                             </div>
                             <div class="col-lg-5 col-md-6">
                                 <div class="trend-content position-relative text-md-start text-center">
                                     <small>{{ $tour->days }}</small>
-                                    <h3 class="mb-1"><a href="{{ route('tours.show',['tour' => $tour])}}">{{ $tour->title }}</a></h3>
-                                    <h6 class="theme mb-0"><i class="icon-location-pin"></i> {{ $tour->place->title }}</h6>
-                                    <p class="mt-4 mb-0">{{ $tour->short_description }} <br><a href="{{ route('tours.show',['tour' => $tour]) }}"><span class="theme"> {{ $tour->area }}</span></a></p>
+                                    <h3 class="mb-1"><a
+                                            href="{{ route('tours.show',['tour' => $tour])}}">{{ $tour->title }}</a>
+                                    </h3>
+                                    <h6 class="theme mb-0"><i class="icon-location-pin"></i> {{ $tour->place->title }}
+                                    </h6>
+                                    <p class="mt-4 mb-0">{{ $tour->short_description }} <br><a
+                                            href="{{ route('tours.show',['tour' => $tour]) }}"><span
+                                                class="theme"> {{ $tour->area }}</span></a></p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-3">
@@ -32,7 +37,8 @@
                                         <h3 class="mb-0">{{ '$'.$tour->price }}</h3>
                                         <small>{{__('Per person')}}</small>
                                     </div>
-                                    <a href="{{ route('tours.show',['tour' => $tour]) }}" class="nir-btn">{{__('View Detail')}}</a>
+                                    <a href="{{ route('tours.show',['tour' => $tour]) }}"
+                                       class="nir-btn">{{__('View Detail')}}</a>
                                 </div>
                             </div>
                         @endforeach
@@ -40,8 +46,31 @@
                 </div>
             </div>
         </div>
-       </section>
-
+    </section>
+    <section class="trending pt-6 pb-0 bg-success">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="col-lg-6">
+                    @if (Session::has('successMsg'))
+                        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                            <div id="liveToast" class="toast fade show" role="alert"
+                                 aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <div class="rounded me-2 bg-success"
+                                         style="width: 16px; height: 16px"></div>
+                                    <strong class="me-auto">{{__('Message')}}</strong>
+                                </div>
+                                <div class="toast-body">
+                                    {{ Session::get('successMsg') }}
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        @endif
+        <div id="contactform-error-msg"></div>
+    </section>
 
 
 </x-layouts.main>

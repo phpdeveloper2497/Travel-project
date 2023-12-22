@@ -26,15 +26,8 @@ class TourController extends Controller
 
     public function store(StoreBookRequest $request)
     {
-//        dd($request->all());
-         $book = Book::create([
-            "tour_id" => $request->tour_id,
-            "first_name" => $request->first_name,
-            "last_name" => $request->last_name,
-            "phone" => $request->phone,
-            "comment" => $request->comment,
-
-        ]);
+        Book::create($request->validated());
+        $request->session()->flash('successMsg', __('Successfully booked'));
         return redirect()->route('tours.index');
     }
 

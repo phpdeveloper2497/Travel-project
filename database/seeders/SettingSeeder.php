@@ -16,7 +16,8 @@ class SettingSeeder extends Seeder
         Setting::create([
             'phone1' => '+9989056565',
             'phone2' => '+998954056565',
-            'location' =>'location tashkent city',
+            'location' =>'location Bukhara city',
+            'address'  =>'Tashkent-Bukhara',
             'email1' => 'php@php.ru',
             'email2' => 'php@php.com',
             'facebook' => 'facebook',
