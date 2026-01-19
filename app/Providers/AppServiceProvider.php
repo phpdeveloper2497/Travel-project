@@ -27,6 +27,6 @@ class AppServiceProvider extends ServiceProvider
             $view->with('all_locales', config('app.all_locales'));
         });
 
-        View::share('settings', Setting::first());
+        //View::share('settings', Setting::first());
     }
 }
